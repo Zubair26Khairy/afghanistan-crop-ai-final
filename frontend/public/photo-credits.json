@@ -1,0 +1,110 @@
+{
+  "Almonds": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Almonds_1.jpg/960px-Almonds_1.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Almonds_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Almonds_1.jpg",
+    "author": "David R. Tribble (Loadmaster)",
+    "license": "CC BY-SA 3.0",
+    "local": "/photos/almonds.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Apples": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Apples_fruit.jpg/960px-Apples_fruit.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/0/00/Apples_fruit.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Apples_fruit.jpg",
+    "author": "SafariTravelPlus",
+    "license": "CC0 1.0",
+    "local": "/photos/apples.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "Apricots": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Apricots.jpg/960px-Apricots.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Apricots.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Apricots.jpg",
+    "author": "Fir0002",
+    "license": "CC BY-SA 3.0",
+    "local": "/photos/apricots.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Oranges": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Oranges_fruit.jpg/960px-Oranges_fruit.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Oranges_fruit.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Oranges_fruit.jpg",
+    "author": "Håkan Dahlström",
+    "license": "CC BY 2.0",
+    "local": "/photos/oranges.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "Figs": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Fig_%28Ficus_carica%29_fruits.jpg/960px-Fig_%28Ficus_carica%29_fruits.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Fig_%28Ficus_carica%29_fruits.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fig_%28Ficus_carica%29_fruits.jpg",
+    "author": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "local": "/photos/figs.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "Grapes": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/A_bunch_of_grapes_a.jpg/960px-A_bunch_of_grapes_a.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/A_bunch_of_grapes_a.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:A_bunch_of_grapes_a.jpg",
+    "author": "Vijay Kumar Soren",
+    "license": "CC BY-SA 4.0",
+    "local": "/photos/grapes.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "Melons": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Cantaloup.jpg/960px-Cantaloup.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/1/19/Cantaloup.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cantaloup.jpg",
+    "author": "Aberdung",
+    "license": "CC BY-SA 3.0",
+    "local": "/photos/melons.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "Watermelons": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Sliced_Watermelon_fruit.jpg/960px-Sliced_Watermelon_fruit.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Sliced_Watermelon_fruit.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sliced_Watermelon_fruit.jpg",
+    "author": "Fatimah Bello",
+    "license": "CC0 1.0",
+    "local": "/photos/watermelons.jpg",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "Pine Nuts": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pine_Nuts.jpg/960px-Pine_Nuts.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/8/81/Pine_Nuts.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pine_Nuts.jpg",
+    "author": "Prosthetic Head",
+    "license": "CC BY-SA 4.0",
+    "local": "/photos/pine-nuts.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "Pomegranates": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Pomegranate_Fruit.jpg/960px-Pomegranate_Fruit.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/1/15/Pomegranate_Fruit.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pomegranate_Fruit.jpg",
+    "author": "Iwai-Dialax",
+    "license": "CC BY 4.0",
+    "local": "/photos/pomegranates.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "Pistachios": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Pistachios.jpg/960px-Pistachios.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Pistachios.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pistachios.jpg",
+    "author": "marcodisce",
+    "license": "CC BY-SA 2.0",
+    "local": "/photos/pistachios.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+  },
+  "Saffron": {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Crocus_sativus_-_Saffron_crocus_-_Safran_02.JPG/960px-Crocus_sativus_-_Saffron_crocus_-_Safran_02.JPG",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/2/21/Crocus_sativus_-_Saffron_crocus_-_Safran_02.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Crocus_sativus_-_Saffron_crocus_-_Safran_02.JPG",
+    "author": "Zeynel Cebeci",
+    "license": "CC BY-SA 4.0",
+    "local": "/photos/saffron.jpg",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  }
+}

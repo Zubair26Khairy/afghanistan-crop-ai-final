@@ -1,0 +1,8 @@
+# Validation performed before packaging
+
+- Model binaries and backend Python source unchanged from the earlier successful hosting archive.
+- Local FastAPI TestClient: health, metadata, yield, 12-crop recommendation, 3 irrigation scenarios, saffron kg unit, invalid month rejection passed.
+- Research tables parsed from original reports: 13 classification, 11 ordinary and 11 saffron random-test configurations, 105 cross-validation rows, 12 optimized candidates.
+- Actual-vs-predicted points regenerated with cloned model architectures and original chronological split: ordinary MAE 2.1499727631401417, R² 0.7419682941429999, 1,866 points; saffron MAE 1.319303501400309, R² 0.35458016384171986, 42 points. Both match the previous result exactly. Deployment model files were not overwritten.
+- JSX transpilation checked. Local browser interaction smoke test using an available React 19 runtime and the same transpiled application (not the production Vite build): all nine pages, prediction cards using the real local backend, regression scatter charts, dataset pagination and raw/clean selection, crop library, implementation lab, theme toggle, presentation mode, photo credits passed without JavaScript errors.
+- npm package downloads and live external photo downloads were unavailable in the preparation environment. The production React 18/Vite build and live Vercel deploy were not independently run. Photo source URLs and attribution are included; the prebuild script attempts to cache images and does not fail the build when external network access fails. Browser fallbacks handle unavailable photos. The images are not bundled in this ZIP as downloaded binaries.
