@@ -1,0 +1,1075 @@
+
+===========================================================================
+STEP 10: CROSS-VALIDATION AND MODEL STABILITY
+===========================================================================
+
+===========================================================================
+CLASSIFICATION CROSS-VALIDATION
+===========================================================================
+
+[1/13] Dummy Classifier | 3-fold CV
+Mean accuracy: 50.4055 %
+Mean Macro F1: 0.2234
+F1 standard deviation: 0.0
+
+[2/13] Decision Tree Gini | 3-fold CV
+Mean accuracy: 95.4759 %
+Mean Macro F1: 0.9467
+F1 standard deviation: 0.0063
+
+[3/13] Decision Tree Entropy | 3-fold CV
+Mean accuracy: 95.2767 %
+Mean Macro F1: 0.9438
+F1 standard deviation: 0.0057
+
+[4/13] Random Forest | 3-fold CV
+Mean accuracy: 93.6975 %
+Mean Macro F1: 0.9256
+F1 standard deviation: 0.0128
+
+[5/13] Gaussian Naive Bayes | 3-fold CV
+Mean accuracy: 48.6556 %
+Mean Macro F1: 0.4619
+F1 standard deviation: 0.0069
+
+[6/13] Linear SVM | 3-fold CV
+Mean accuracy: 57.405 %
+Mean Macro F1: 0.529
+F1 standard deviation: 0.011
+
+[7/13] RBF SVM | 3-fold CV
+Mean accuracy: 96.3437 %
+Mean Macro F1: 0.949
+F1 standard deviation: 0.0082
+
+[8/13] KNN | 3-fold CV
+Mean accuracy: 83.8811 %
+Mean Macro F1: 0.7664
+F1 standard deviation: 0.0103
+
+[9/13] Logistic Regression | 3-fold CV
+Mean accuracy: 58.529 %
+Mean Macro F1: 0.5387
+F1 standard deviation: 0.0225
+
+[10/13] Gradient Boosting | 3-fold CV
+Mean accuracy: 94.2097 %
+Mean Macro F1: 0.9309
+F1 standard deviation: 0.0096
+
+[11/13] Histogram Gradient Boosting | 3-fold CV
+Mean accuracy: 97.2969 %
+Mean Macro F1: 0.9668
+F1 standard deviation: 0.0027
+
+[12/13] Tuned Decision Tree | 3-fold CV
+Mean accuracy: 95.5043 %
+Mean Macro F1: 0.9454
+F1 standard deviation: 0.0042
+
+[13/13] Tuned KNN | 3-fold CV
+Mean accuracy: 87.9215 %
+Mean Macro F1: 0.8458
+F1 standard deviation: 0.0129
+
+[1/13] Dummy Classifier | 5-fold CV
+Mean accuracy: 50.4055 %
+Mean Macro F1: 0.2234
+F1 standard deviation: 0.0001
+
+[2/13] Decision Tree Gini | 5-fold CV
+Mean accuracy: 95.917 %
+Mean Macro F1: 0.9503
+F1 standard deviation: 0.0069
+
+[3/13] Decision Tree Entropy | 5-fold CV
+Mean accuracy: 95.8033 %
+Mean Macro F1: 0.9506
+F1 standard deviation: 0.014
+
+[4/13] Random Forest | 5-fold CV
+Mean accuracy: 93.8969 %
+Mean Macro F1: 0.9277
+F1 standard deviation: 0.0125
+
+[5/13] Gaussian Naive Bayes | 5-fold CV
+Mean accuracy: 48.1721 %
+Mean Macro F1: 0.4548
+F1 standard deviation: 0.0119
+
+[6/13] Linear SVM | 5-fold CV
+Mean accuracy: 56.5372 %
+Mean Macro F1: 0.5231
+F1 standard deviation: 0.0243
+
+[7/13] RBF SVM | 5-fold CV
+Mean accuracy: 96.8986 %
+Mean Macro F1: 0.9553
+F1 standard deviation: 0.0075
+
+[8/13] KNN | 5-fold CV
+Mean accuracy: 84.8769 %
+Mean Macro F1: 0.7847
+F1 standard deviation: 0.005
+
+[9/13] Logistic Regression | 5-fold CV
+Mean accuracy: 58.3581 %
+Mean Macro F1: 0.5371
+F1 standard deviation: 0.0107
+
+[10/13] Gradient Boosting | 5-fold CV
+Mean accuracy: 94.4802 %
+Mean Macro F1: 0.9343
+F1 standard deviation: 0.0103
+
+[11/13] Histogram Gradient Boosting | 5-fold CV
+Mean accuracy: 97.4677 %
+Mean Macro F1: 0.9687
+F1 standard deviation: 0.0071
+
+[12/13] Tuned Decision Tree | 5-fold CV
+Mean accuracy: 95.6895 %
+Mean Macro F1: 0.9488
+F1 standard deviation: 0.0136
+
+[13/13] Tuned KNN | 5-fold CV
+Mean accuracy: 88.3767 %
+Mean Macro F1: 0.8498
+F1 standard deviation: 0.0162
+
+[1/13] Dummy Classifier | 10-fold CV
+Mean accuracy: 50.4055 %
+Mean Macro F1: 0.2234
+F1 standard deviation: 0.0002
+
+[2/13] Decision Tree Gini | 10-fold CV
+Mean accuracy: 96.5145 %
+Mean Macro F1: 0.956
+F1 standard deviation: 0.0107
+
+[3/13] Decision Tree Entropy | 10-fold CV
+Mean accuracy: 95.7179 %
+Mean Macro F1: 0.9486
+F1 standard deviation: 0.0138
+
+[4/13] Random Forest | 10-fold CV
+Mean accuracy: 94.5656 %
+Mean Macro F1: 0.9353
+F1 standard deviation: 0.0146
+
+[5/13] Gaussian Naive Bayes | 10-fold CV
+Mean accuracy: 48.4139 %
+Mean Macro F1: 0.4566
+F1 standard deviation: 0.0128
+
+[6/13] Linear SVM | 10-fold CV
+Mean accuracy: 54.2043 %
+Mean Macro F1: 0.5027
+F1 standard deviation: 0.019
+
+[7/13] RBF SVM | 10-fold CV
+Mean accuracy: 97.2544 %
+Mean Macro F1: 0.9601
+F1 standard deviation: 0.0109
+
+[8/13] KNN | 10-fold CV
+Mean accuracy: 85.6882 %
+Mean Macro F1: 0.7981
+F1 standard deviation: 0.0167
+
+[9/13] Logistic Regression | 10-fold CV
+Mean accuracy: 58.5715 %
+Mean Macro F1: 0.5398
+F1 standard deviation: 0.0225
+
+[10/13] Gradient Boosting | 10-fold CV
+Mean accuracy: 94.6367 %
+Mean Macro F1: 0.9356
+F1 standard deviation: 0.0121
+
+[11/13] Histogram Gradient Boosting | 10-fold CV
+Mean accuracy: 97.5815 %
+Mean Macro F1: 0.9697
+F1 standard deviation: 0.0082
+
+[12/13] Tuned Decision Tree | 10-fold CV
+Mean accuracy: 96.3154 %
+Mean Macro F1: 0.9536
+F1 standard deviation: 0.0117
+
+[13/13] Tuned KNN | 10-fold CV
+Mean accuracy: 88.576 %
+Mean Macro F1: 0.8511
+F1 standard deviation: 0.0189
+
+--- CLASSIFICATION CV RESULTS ---
+                      Model  Folds  Mean_Accuracy  Std_Accuracy  Mean_Macro_F1  Std_Macro_F1  Min_Macro_F1  Max_Macro_F1  Mean_Balanced_Accuracy  Mean_Train_F1  F1_Gap  Execution_Seconds
+Histogram Gradient Boosting      3         0.9730        0.0021         0.9668        0.0027        0.9647        0.9699                  0.9689         0.9998  0.0330             5.8246
+                    RBF SVM      3         0.9634        0.0066         0.9490        0.0082        0.9400        0.9561                  0.9474         0.9888  0.0398            10.2041
+         Decision Tree Gini      3         0.9548        0.0049         0.9467        0.0063        0.9420        0.9538                  0.9516         1.0000  0.0533             0.1431
+        Tuned Decision Tree      3         0.9550        0.0041         0.9454        0.0042        0.9420        0.9501                  0.9506         1.0000  0.0546            13.4633
+      Decision Tree Entropy      3         0.9528        0.0062         0.9438        0.0057        0.9390        0.9501                  0.9464         1.0000  0.0562             0.1440
+          Gradient Boosting      3         0.9421        0.0083         0.9309        0.0096        0.9214        0.9407                  0.9280         0.9553  0.0245            13.7899
+              Random Forest      3         0.9370        0.0101         0.9256        0.0128        0.9129        0.9385                  0.9251         0.9681  0.0425             2.1774
+                  Tuned KNN      3         0.8792        0.0087         0.8458        0.0129        0.8373        0.8607                  0.8350         1.0000  0.1542            10.9669
+                        KNN      3         0.8388        0.0086         0.7664        0.0103        0.7555        0.7758                  0.7611         0.8429  0.0765             0.3554
+        Logistic Regression      3         0.5853        0.0243         0.5387        0.0225        0.5183        0.5628                  0.5644         0.5553  0.0166             0.1828
+                 Linear SVM      3         0.5741        0.0073         0.5290        0.0110        0.5175        0.5394                  0.5530         0.5483  0.0193            16.7041
+       Gaussian Naive Bayes      3         0.4866        0.0076         0.4619        0.0069        0.4539        0.4667                  0.5072         0.4778  0.0160             0.1166
+           Dummy Classifier      3         0.5041        0.0000         0.2234        0.0000        0.2234        0.2234                  0.3333         0.2234  0.0000             0.0773
+Histogram Gradient Boosting      5         0.9747        0.0056         0.9687        0.0071        0.9597        0.9773                  0.9706         0.9995  0.0308             9.5572
+                    RBF SVM      5         0.9690        0.0055         0.9553        0.0075        0.9456        0.9631                  0.9548         0.9896  0.0342            21.0594
+      Decision Tree Entropy      5         0.9580        0.0119         0.9506        0.0140        0.9375        0.9718                  0.9558         1.0000  0.0494             0.2684
+         Decision Tree Gini      5         0.9592        0.0051         0.9503        0.0069        0.9414        0.9595                  0.9550         1.0000  0.0497             0.2554
+        Tuned Decision Tree      5         0.9569        0.0114         0.9488        0.0136        0.9375        0.9718                  0.9536         1.0000  0.0512            19.2608
+          Gradient Boosting      5         0.9448        0.0086         0.9343        0.0103        0.9218        0.9492                  0.9319         0.9544  0.0201            27.2612
+              Random Forest      5         0.9390        0.0104         0.9277        0.0125        0.9183        0.9449                  0.9287         0.9701  0.0425             3.9000
+                  Tuned KNN      5         0.8838        0.0128         0.8498        0.0162        0.8300        0.8675                  0.8393         1.0000  0.1502            26.7417
+                        KNN      5         0.8488        0.0079         0.7847        0.0050        0.7801        0.7909                  0.7784         0.8572  0.0726             0.5033
+        Logistic Regression      5         0.5836        0.0128         0.5371        0.0107        0.5236        0.5486                  0.5626         0.5513  0.0142             0.3028
+                 Linear SVM      5         0.5654        0.0252         0.5231        0.0243        0.4939        0.5592                  0.5511         0.5401  0.0170            40.4524
+       Gaussian Naive Bayes      5         0.4817        0.0138         0.4548        0.0119        0.4417        0.4674                  0.4947         0.4793  0.0245             0.1972
+           Dummy Classifier      5         0.5041        0.0003         0.2234        0.0001        0.2233        0.2235                  0.3333         0.2234  0.0000             0.1391
+Histogram Gradient Boosting     10         0.9758        0.0057         0.9697        0.0082        0.9604        0.9824                  0.9710         0.9993  0.0296            20.9440
+                    RBF SVM     10         0.9725        0.0070         0.9601        0.0109        0.9415        0.9724                  0.9594         0.9901  0.0300            49.4500
+         Decision Tree Gini     10         0.9651        0.0084         0.9560        0.0107        0.9408        0.9721                  0.9605         1.0000  0.0440             0.6205
+        Tuned Decision Tree     10         0.9632        0.0099         0.9536        0.0117        0.9325        0.9717                  0.9584         1.0000  0.0464            41.4605
+      Decision Tree Entropy     10         0.9572        0.0118         0.9486        0.0138        0.9268        0.9685                  0.9524         1.0000  0.0514             0.6513
+          Gradient Boosting     10         0.9464        0.0097         0.9356        0.0121        0.9129        0.9578                  0.9337         0.9548  0.0192            60.2326
+              Random Forest     10         0.9457        0.0117         0.9353        0.0146        0.9111        0.9558                  0.9360         0.9715  0.0363             8.7268
+                  Tuned KNN     10         0.8858        0.0142         0.8511        0.0189        0.8126        0.8794                  0.8406         1.0000  0.1489            62.1128
+                        KNN     10         0.8569        0.0138         0.7981        0.0167        0.7685        0.8200                  0.7917         0.8660  0.0679             1.1814
+        Logistic Regression     10         0.5857        0.0218         0.5398        0.0225        0.5082        0.5862                  0.5662         0.5513  0.0115             0.6885
+                 Linear SVM     10         0.5420        0.0178         0.5027        0.0190        0.4777        0.5313                  0.5467         0.5151  0.0124           102.3007
+       Gaussian Naive Bayes     10         0.4841        0.0145         0.4566        0.0128        0.4316        0.4815                  0.4967         0.4810  0.0243             0.3900
+           Dummy Classifier     10         0.5041        0.0007         0.2234        0.0002        0.2233        0.2237                  0.3333         0.2234  0.0000             0.3246
+
+--- CLASSIFICATION STABILITY ---
+                             CV_3_Macro_F1  CV_5_Macro_F1  CV_10_Macro_F1  Mean_CV_F1
+Model                                                                                
+Histogram Gradient Boosting         0.9668         0.9687          0.9697      0.9684
+RBF SVM                             0.9490         0.9553          0.9601      0.9548
+Decision Tree Gini                  0.9467         0.9503          0.9560      0.9510
+Tuned Decision Tree                 0.9454         0.9488          0.9536      0.9493
+Decision Tree Entropy               0.9438         0.9506          0.9486      0.9476
+Gradient Boosting                   0.9309         0.9343          0.9356      0.9336
+Random Forest                       0.9256         0.9277          0.9353      0.9295
+Tuned KNN                           0.8458         0.8498          0.8511      0.8489
+KNN                                 0.7664         0.7847          0.7981      0.7830
+Logistic Regression                 0.5387         0.5371          0.5398      0.5385
+Linear SVM                          0.5290         0.5231          0.5027      0.5183
+Gaussian Naive Bayes                0.4619         0.4548          0.4566      0.4578
+Dummy Classifier                    0.2234         0.2234          0.2234      0.2234
+
+===========================================================================
+ORDINARY CROP REGRESSION CROSS-VALIDATION
+===========================================================================
+
+Ordinary Crops | [1/11] Dummy Regressor | 3-fold CV
+Mean MAE: 4.8611 t/ha
+Mean RMSE: 6.1472
+Mean R2: -0.0001
+R2 standard deviation: 0.0001
+
+Ordinary Crops | [2/11] Simple Linear Regression | 3-fold CV
+Mean MAE: 4.86 t/ha
+Mean RMSE: 6.1457
+Mean R2: 0.0004
+R2 standard deviation: 0.0007
+
+Ordinary Crops | [3/11] Multiple Linear Regression | 3-fold CV
+Mean MAE: 3.1341 t/ha
+Mean RMSE: 4.1078
+Mean R2: 0.5532
+R2 standard deviation: 0.0244
+
+Ordinary Crops | [4/11] Polynomial Regression | 3-fold CV
+Mean MAE: 2.7142 t/ha
+Mean RMSE: 3.69
+Mean R2: 0.6395
+R2 standard deviation: 0.0178
+
+Ordinary Crops | [5/11] Ridge Regression | 3-fold CV
+Mean MAE: 3.1357 t/ha
+Mean RMSE: 4.1079
+Mean R2: 0.5532
+R2 standard deviation: 0.0242
+
+Ordinary Crops | [6/11] Decision Tree | 3-fold CV
+Mean MAE: 2.2602 t/ha
+Mean RMSE: 3.2384
+Mean R2: 0.7222
+R2 standard deviation: 0.0158
+
+Ordinary Crops | [7/11] Random Forest | 3-fold CV
+Mean MAE: 2.1731 t/ha
+Mean RMSE: 3.1328
+Mean R2: 0.74
+R2 standard deviation: 0.0147
+
+Ordinary Crops | [8/11] Gradient Boosting | 3-fold CV
+Mean MAE: 2.1857 t/ha
+Mean RMSE: 3.0965
+Mean R2: 0.7458
+R2 standard deviation: 0.0198
+
+Ordinary Crops | [9/11] Histogram Gradient Boosting | 3-fold CV
+Mean MAE: 2.1901 t/ha
+Mean RMSE: 3.1278
+Mean R2: 0.7407
+R2 standard deviation: 0.0203
+
+Ordinary Crops | [10/11] Support Vector Regression | 3-fold CV
+Mean MAE: 2.4776 t/ha
+Mean RMSE: 3.5296
+Mean R2: 0.6701
+R2 standard deviation: 0.0159
+
+Ordinary Crops | [11/11] KNN Regression | 3-fold CV
+Mean MAE: 3.1289 t/ha
+Mean RMSE: 4.2897
+Mean R2: 0.5129
+R2 standard deviation: 0.0073
+
+Ordinary Crops | [1/11] Dummy Regressor | 5-fold CV
+Mean MAE: 4.8614 t/ha
+Mean RMSE: 6.1474
+Mean R2: -0.0003
+R2 standard deviation: 0.0003
+
+Ordinary Crops | [2/11] Simple Linear Regression | 5-fold CV
+Mean MAE: 4.8602 t/ha
+Mean RMSE: 6.1459
+Mean R2: 0.0002
+R2 standard deviation: 0.001
+
+Ordinary Crops | [3/11] Multiple Linear Regression | 5-fold CV
+Mean MAE: 3.1349 t/ha
+Mean RMSE: 4.1051
+Mean R2: 0.5538
+R2 standard deviation: 0.0191
+
+Ordinary Crops | [4/11] Polynomial Regression | 5-fold CV
+Mean MAE: 2.6928 t/ha
+Mean RMSE: 3.6677
+Mean R2: 0.6437
+R2 standard deviation: 0.0159
+
+Ordinary Crops | [5/11] Ridge Regression | 5-fold CV
+Mean MAE: 3.1363 t/ha
+Mean RMSE: 4.1051
+Mean R2: 0.5538
+R2 standard deviation: 0.019
+
+Ordinary Crops | [6/11] Decision Tree | 5-fold CV
+Mean MAE: 2.2497 t/ha
+Mean RMSE: 3.2449
+Mean R2: 0.7211
+R2 standard deviation: 0.0151
+
+Ordinary Crops | [7/11] Random Forest | 5-fold CV
+Mean MAE: 2.1615 t/ha
+Mean RMSE: 3.109
+Mean R2: 0.7439
+R2 standard deviation: 0.0121
+
+Ordinary Crops | [8/11] Gradient Boosting | 5-fold CV
+Mean MAE: 2.1773 t/ha
+Mean RMSE: 3.0844
+Mean R2: 0.7479
+R2 standard deviation: 0.013
+
+Ordinary Crops | [9/11] Histogram Gradient Boosting | 5-fold CV
+Mean MAE: 2.1789 t/ha
+Mean RMSE: 3.1076
+Mean R2: 0.7441
+R2 standard deviation: 0.0148
+
+Ordinary Crops | [10/11] Support Vector Regression | 5-fold CV
+Mean MAE: 2.4633 t/ha
+Mean RMSE: 3.5187
+Mean R2: 0.6721
+R2 standard deviation: 0.0099
+
+Ordinary Crops | [11/11] KNN Regression | 5-fold CV
+Mean MAE: 3.1082 t/ha
+Mean RMSE: 4.2812
+Mean R2: 0.5148
+R2 standard deviation: 0.0077
+
+Ordinary Crops | [1/11] Dummy Regressor | 10-fold CV
+Mean MAE: 4.8616 t/ha
+Mean RMSE: 6.1466
+Mean R2: -0.0013
+R2 standard deviation: 0.0016
+
+Ordinary Crops | [2/11] Simple Linear Regression | 10-fold CV
+Mean MAE: 4.8603 t/ha
+Mean RMSE: 6.1449
+Mean R2: -0.0007
+R2 standard deviation: 0.002
+
+Ordinary Crops | [3/11] Multiple Linear Regression | 10-fold CV
+Mean MAE: 3.1338 t/ha
+Mean RMSE: 4.1006
+Mean R2: 0.5536
+R2 standard deviation: 0.0339
+
+Ordinary Crops | [4/11] Polynomial Regression | 10-fold CV
+Mean MAE: 2.6758 t/ha
+Mean RMSE: 3.6464
+Mean R2: 0.6471
+R2 standard deviation: 0.0217
+
+Ordinary Crops | [5/11] Ridge Regression | 10-fold CV
+Mean MAE: 3.135 t/ha
+Mean RMSE: 4.1007
+Mean R2: 0.5536
+R2 standard deviation: 0.0337
+
+Ordinary Crops | [6/11] Decision Tree | 10-fold CV
+Mean MAE: 2.2245 t/ha
+Mean RMSE: 3.1819
+Mean R2: 0.731
+R2 standard deviation: 0.0202
+
+Ordinary Crops | [7/11] Random Forest | 10-fold CV
+Mean MAE: 2.155 t/ha
+Mean RMSE: 3.1006
+Mean R2: 0.7446
+R2 standard deviation: 0.0194
+
+Ordinary Crops | [8/11] Gradient Boosting | 10-fold CV
+Mean MAE: 2.1682 t/ha
+Mean RMSE: 3.0768
+Mean R2: 0.7483
+R2 standard deviation: 0.022
+
+Ordinary Crops | [9/11] Histogram Gradient Boosting | 10-fold CV
+Mean MAE: 2.1629 t/ha
+Mean RMSE: 3.0891
+Mean R2: 0.7464
+R2 standard deviation: 0.0218
+
+Ordinary Crops | [10/11] Support Vector Regression | 10-fold CV
+Mean MAE: 2.4481 t/ha
+Mean RMSE: 3.4982
+Mean R2: 0.6751
+R2 standard deviation: 0.0206
+
+Ordinary Crops | [11/11] KNN Regression | 10-fold CV
+Mean MAE: 3.0658 t/ha
+Mean RMSE: 4.2479
+Mean R2: 0.5211
+R2 standard deviation: 0.0265
+
+--- ORDINARY CROP CV RESULTS ---
+       Dataset Yield_Unit                       Model  Folds  Mean_MAE  Std_MAE  Mean_RMSE  Mean_R2  Std_R2  Min_R2  Max_R2  Mean_Train_R2  R2_Gap  Execution_Seconds
+Ordinary Crops       t/ha               Random Forest      3    2.1731   0.0574     3.1328   0.7400  0.0147  0.7254  0.7548         0.8924  0.1524             9.1811
+Ordinary Crops       t/ha           Gradient Boosting      3    2.1857   0.0753     3.0965   0.7458  0.0198  0.7272  0.7666         0.7843  0.0384             7.8958
+Ordinary Crops       t/ha Histogram Gradient Boosting      3    2.1901   0.0799     3.1278   0.7407  0.0203  0.7209  0.7614         0.8695  0.1288             2.1076
+Ordinary Crops       t/ha               Decision Tree      3    2.2602   0.0650     3.2384   0.7222  0.0158  0.7047  0.7351         0.7804  0.0581             0.1809
+Ordinary Crops       t/ha   Support Vector Regression      3    2.4776   0.0700     3.5296   0.6701  0.0159  0.6531  0.6846         0.8121  0.1421            19.6029
+Ordinary Crops       t/ha       Polynomial Regression      3    2.7142   0.0958     3.6900   0.6395  0.0178  0.6190  0.6515         0.7153  0.0758             1.0377
+Ordinary Crops       t/ha              KNN Regression      3    3.1289   0.0261     4.2897   0.5129  0.0073  0.5054  0.5201         1.0000  0.4871             0.4174
+Ordinary Crops       t/ha  Multiple Linear Regression      3    3.1341   0.0780     4.1078   0.5532  0.0244  0.5257  0.5722         0.5630  0.0097             0.0968
+Ordinary Crops       t/ha            Ridge Regression      3    3.1357   0.0773     4.1079   0.5532  0.0242  0.5260  0.5720         0.5629  0.0097             0.1017
+Ordinary Crops       t/ha    Simple Linear Regression      3    4.8600   0.0270     6.1457   0.0004  0.0007 -0.0003  0.0009         0.0007  0.0003             0.0350
+Ordinary Crops       t/ha             Dummy Regressor      3    4.8611   0.0304     6.1472  -0.0001  0.0001 -0.0001 -0.0000         0.0000  0.0001             0.0714
+Ordinary Crops       t/ha               Random Forest      5    2.1615   0.0393     3.1090   0.7439  0.0121  0.7258  0.7585         0.8869  0.1430            18.5587
+Ordinary Crops       t/ha           Gradient Boosting      5    2.1773   0.0452     3.0844   0.7479  0.0130  0.7291  0.7642         0.7805  0.0326            18.2995
+Ordinary Crops       t/ha Histogram Gradient Boosting      5    2.1789   0.0543     3.1076   0.7441  0.0148  0.7233  0.7636         0.8550  0.1109             4.0929
+Ordinary Crops       t/ha               Decision Tree      5    2.2497   0.0321     3.2449   0.7211  0.0151  0.7015  0.7380         0.7869  0.0659             0.3768
+Ordinary Crops       t/ha   Support Vector Regression      5    2.4633   0.0422     3.5187   0.6721  0.0099  0.6593  0.6848         0.8078  0.1357            45.1128
+Ordinary Crops       t/ha       Polynomial Regression      5    2.6928   0.0645     3.6677   0.6437  0.0159  0.6214  0.6599         0.7092  0.0655             2.1910
+Ordinary Crops       t/ha              KNN Regression      5    3.1082   0.0287     4.2812   0.5148  0.0077  0.5024  0.5234         1.0000  0.4852             0.7427
+Ordinary Crops       t/ha  Multiple Linear Regression      5    3.1349   0.0775     4.1051   0.5538  0.0191  0.5216  0.5722         0.5621  0.0083             0.2069
+Ordinary Crops       t/ha            Ridge Regression      5    3.1363   0.0770     4.1051   0.5538  0.0190  0.5218  0.5719         0.5621  0.0083             0.1798
+Ordinary Crops       t/ha    Simple Linear Regression      5    4.8602   0.0475     6.1459   0.0002  0.0010 -0.0009  0.0014         0.0007  0.0005             0.0729
+Ordinary Crops       t/ha             Dummy Regressor      5    4.8614   0.0503     6.1474  -0.0003  0.0003 -0.0007 -0.0000         0.0000  0.0003             0.1460
+Ordinary Crops       t/ha               Random Forest     10    2.1550   0.0835     3.1006   0.7446  0.0194  0.7229  0.7799         0.8839  0.1393            42.5666
+Ordinary Crops       t/ha Histogram Gradient Boosting     10    2.1629   0.0949     3.0891   0.7464  0.0218  0.7137  0.7825         0.8480  0.1017             7.4228
+Ordinary Crops       t/ha           Gradient Boosting     10    2.1682   0.0961     3.0768   0.7483  0.0220  0.7215  0.7826         0.7780  0.0296            37.3398
+Ordinary Crops       t/ha               Decision Tree     10    2.2245   0.0756     3.1819   0.7310  0.0202  0.7111  0.7638         0.7808  0.0498             0.8302
+Ordinary Crops       t/ha   Support Vector Regression     10    2.4481   0.0826     3.4982   0.6751  0.0206  0.6510  0.7104         0.8044  0.1294            98.9691
+Ordinary Crops       t/ha       Polynomial Regression     10    2.6758   0.1061     3.6464   0.6471  0.0217  0.6001  0.6800         0.7056  0.0585             5.1846
+Ordinary Crops       t/ha              KNN Regression     10    3.0658   0.1054     4.2479   0.5211  0.0265  0.4743  0.5631         1.0000  0.4789             1.3437
+Ordinary Crops       t/ha  Multiple Linear Regression     10    3.1338   0.1041     4.1006   0.5536  0.0339  0.4865  0.5925         0.5616  0.0080             0.4899
+Ordinary Crops       t/ha            Ridge Regression     10    3.1350   0.1034     4.1007   0.5536  0.0337  0.4870  0.5923         0.5616  0.0080             0.4222
+Ordinary Crops       t/ha    Simple Linear Regression     10    4.8603   0.0705     6.1449  -0.0007  0.0020 -0.0046  0.0013         0.0006  0.0013             0.1362
+Ordinary Crops       t/ha             Dummy Regressor     10    4.8616   0.0705     6.1466  -0.0013  0.0016 -0.0052 -0.0001         0.0000  0.0013             0.3010
+
+===========================================================================
+SAFFRON REGRESSION CROSS-VALIDATION
+===========================================================================
+
+Saffron | [1/11] Dummy Regressor | 3-fold CV
+Mean MAE: 1.751 kg/ha
+Mean RMSE: 2.0504
+Mean R2: -0.0143
+R2 standard deviation: 0.0124
+
+Saffron | [2/11] Simple Linear Regression | 3-fold CV
+Mean MAE: 1.7534 kg/ha
+Mean RMSE: 2.0515
+Mean R2: -0.0155
+R2 standard deviation: 0.016
+
+Saffron | [3/11] Multiple Linear Regression | 3-fold CV
+Mean MAE: 1.8047 kg/ha
+Mean RMSE: 2.2251
+Mean R2: -0.2015
+R2 standard deviation: 0.1588
+
+Saffron | [4/11] Polynomial Regression | 3-fold CV
+Mean MAE: 1.5464 kg/ha
+Mean RMSE: 1.8994
+Mean R2: 0.1268
+R2 standard deviation: 0.0753
+
+Saffron | [5/11] Ridge Regression | 3-fold CV
+Mean MAE: 1.7255 kg/ha
+Mean RMSE: 2.0995
+Mean R2: -0.071
+R2 standard deviation: 0.1667
+
+Saffron | [6/11] Decision Tree | 3-fold CV
+Mean MAE: 1.5968 kg/ha
+Mean RMSE: 2.012
+Mean R2: 0.0254
+R2 standard deviation: 0.1918
+
+Saffron | [7/11] Random Forest | 3-fold CV
+Mean MAE: 1.3924 kg/ha
+Mean RMSE: 1.7066
+Mean R2: 0.294
+R2 standard deviation: 0.1684
+
+Saffron | [8/11] Gradient Boosting | 3-fold CV
+Mean MAE: 1.6581 kg/ha
+Mean RMSE: 2.0074
+Mean R2: 0.0278
+R2 standard deviation: 0.1214
+
+Saffron | [9/11] Histogram Gradient Boosting | 3-fold CV
+Mean MAE: 1.4863 kg/ha
+Mean RMSE: 1.8563
+Mean R2: 0.1677
+R2 standard deviation: 0.1009
+
+Saffron | [10/11] Support Vector Regression | 3-fold CV
+Mean MAE: 1.5363 kg/ha
+Mean RMSE: 1.8949
+Mean R2: 0.1328
+R2 standard deviation: 0.041
+
+Saffron | [11/11] KNN Regression | 3-fold CV
+Mean MAE: 1.6864 kg/ha
+Mean RMSE: 1.9977
+Mean R2: 0.0381
+R2 standard deviation: 0.0909
+
+Saffron | [1/11] Dummy Regressor | 5-fold CV
+Mean MAE: 1.7541 kg/ha
+Mean RMSE: 2.0526
+Mean R2: -0.0349
+R2 standard deviation: 0.0163
+
+Saffron | [2/11] Simple Linear Regression | 5-fold CV
+Mean MAE: 1.7593 kg/ha
+Mean RMSE: 2.0591
+Mean R2: -0.0418
+R2 standard deviation: 0.0173
+
+Saffron | [3/11] Multiple Linear Regression | 5-fold CV
+Mean MAE: 1.8054 kg/ha
+Mean RMSE: 2.1861
+Mean R2: -0.1986
+R2 standard deviation: 0.3297
+
+Saffron | [4/11] Polynomial Regression | 5-fold CV
+Mean MAE: 1.5648 kg/ha
+Mean RMSE: 1.9138
+Mean R2: 0.0879
+R2 standard deviation: 0.1529
+
+Saffron | [5/11] Ridge Regression | 5-fold CV
+Mean MAE: 1.7458 kg/ha
+Mean RMSE: 2.1003
+Mean R2: -0.1013
+R2 standard deviation: 0.2756
+
+Saffron | [6/11] Decision Tree | 5-fold CV
+Mean MAE: 1.6328 kg/ha
+Mean RMSE: 2.0922
+Mean R2: -0.0854
+R2 standard deviation: 0.2477
+
+Saffron | [7/11] Random Forest | 5-fold CV
+Mean MAE: 1.4094 kg/ha
+Mean RMSE: 1.7183
+Mean R2: 0.2655
+R2 standard deviation: 0.2138
+
+Saffron | [8/11] Gradient Boosting | 5-fold CV
+Mean MAE: 1.613 kg/ha
+Mean RMSE: 1.9529
+Mean R2: 0.0568
+R2 standard deviation: 0.1358
+
+Saffron | [9/11] Histogram Gradient Boosting | 5-fold CV
+Mean MAE: 1.6189 kg/ha
+Mean RMSE: 1.9697
+Mean R2: 0.0346
+R2 standard deviation: 0.2
+
+Saffron | [10/11] Support Vector Regression | 5-fold CV
+Mean MAE: 1.5608 kg/ha
+Mean RMSE: 1.9295
+Mean R2: 0.077
+R2 standard deviation: 0.1632
+
+Saffron | [11/11] KNN Regression | 5-fold CV
+Mean MAE: 1.7019 kg/ha
+Mean RMSE: 1.9986
+Mean R2: -0.0047
+R2 standard deviation: 0.3042
+
+Saffron | [1/11] Dummy Regressor | 10-fold CV
+Mean MAE: 1.752 kg/ha
+Mean RMSE: 2.0499
+Mean R2: -0.0741
+R2 standard deviation: 0.1111
+
+Saffron | [2/11] Simple Linear Regression | 10-fold CV
+Mean MAE: 1.7708 kg/ha
+Mean RMSE: 2.0718
+Mean R2: -0.0967
+R2 standard deviation: 0.1062
+
+Saffron | [3/11] Multiple Linear Regression | 10-fold CV
+Mean MAE: 1.8489 kg/ha
+Mean RMSE: 2.2102
+Mean R2: -0.2723
+R2 standard deviation: 0.3178
+
+Saffron | [4/11] Polynomial Regression | 10-fold CV
+Mean MAE: 1.5393 kg/ha
+Mean RMSE: 1.8839
+Mean R2: 0.0752
+R2 standard deviation: 0.2525
+
+Saffron | [5/11] Ridge Regression | 10-fold CV
+Mean MAE: 1.7755 kg/ha
+Mean RMSE: 2.1214
+Mean R2: -0.1653
+R2 standard deviation: 0.2577
+
+Saffron | [6/11] Decision Tree | 10-fold CV
+Mean MAE: 1.5726 kg/ha
+Mean RMSE: 2.0039
+Mean R2: -0.0501
+R2 standard deviation: 0.3091
+
+Saffron | [7/11] Random Forest | 10-fold CV
+Mean MAE: 1.3844 kg/ha
+Mean RMSE: 1.6847
+Mean R2: 0.2654
+R2 standard deviation: 0.2082
+
+Saffron | [8/11] Gradient Boosting | 10-fold CV
+Mean MAE: 1.6053 kg/ha
+Mean RMSE: 1.9204
+Mean R2: 0.0149
+R2 standard deviation: 0.3742
+
+Saffron | [9/11] Histogram Gradient Boosting | 10-fold CV
+Mean MAE: 1.5619 kg/ha
+Mean RMSE: 1.9001
+Mean R2: 0.0515
+R2 standard deviation: 0.2959
+
+Saffron | [10/11] Support Vector Regression | 10-fold CV
+Mean MAE: 1.538 kg/ha
+Mean RMSE: 1.8989
+Mean R2: 0.0593
+R2 standard deviation: 0.2783
+
+Saffron | [11/11] KNN Regression | 10-fold CV
+Mean MAE: 1.6219 kg/ha
+Mean RMSE: 1.9394
+Mean R2: 0.01
+R2 standard deviation: 0.316
+
+--- SAFFRON CV RESULTS ---
+Dataset Yield_Unit                       Model  Folds  Mean_MAE  Std_MAE  Mean_RMSE  Mean_R2  Std_R2  Min_R2  Max_R2  Mean_Train_R2  R2_Gap  Execution_Seconds
+Saffron      kg/ha               Random Forest      3    1.3924   0.2476     1.7066   0.2940  0.1684  0.1376  0.4723         0.7861  0.4921             1.1017
+Saffron      kg/ha Histogram Gradient Boosting      3    1.4863   0.1728     1.8563   0.1677  0.1009  0.0620  0.2629         0.9651  0.7974             0.5271
+Saffron      kg/ha   Support Vector Regression      3    1.5363   0.1816     1.8949   0.1328  0.0410  0.0854  0.1570         0.9790  0.8462             0.0740
+Saffron      kg/ha       Polynomial Regression      3    1.5464   0.1620     1.8994   0.1268  0.0753  0.0435  0.1901         0.8586  0.7318             0.0602
+Saffron      kg/ha               Decision Tree      3    1.5968   0.3392     2.0120   0.0254  0.1918 -0.1894  0.1794         0.7302  0.7048             0.0411
+Saffron      kg/ha           Gradient Boosting      3    1.6581   0.3005     2.0074   0.0278  0.1214 -0.0805  0.1591         0.9761  0.9483             0.4182
+Saffron      kg/ha              KNN Regression      3    1.6864   0.2178     1.9977   0.0381  0.0909 -0.0291  0.1416         1.0000  0.9619             0.0740
+Saffron      kg/ha            Ridge Regression      3    1.7255   0.1566     2.0995  -0.0710  0.1667 -0.2577  0.0629         0.3704  0.4414             0.0515
+Saffron      kg/ha             Dummy Regressor      3    1.7510   0.0976     2.0504  -0.0143  0.0124 -0.0226 -0.0000         0.0000  0.0143             0.0391
+Saffron      kg/ha    Simple Linear Regression      3    1.7534   0.0981     2.0515  -0.0155  0.0160 -0.0296  0.0019         0.0015  0.0170             0.0325
+Saffron      kg/ha  Multiple Linear Regression      3    1.8047   0.1536     2.2251  -0.2015  0.1588 -0.3767 -0.0670         0.3994  0.6010             0.0560
+Saffron      kg/ha               Random Forest      5    1.4094   0.2791     1.7183   0.2655  0.2138 -0.0875  0.4650         0.7928  0.5274             1.8828
+Saffron      kg/ha   Support Vector Regression      5    1.5608   0.1862     1.9295   0.0770  0.1632 -0.1454  0.2381         0.9759  0.8989             0.0934
+Saffron      kg/ha       Polynomial Regression      5    1.5648   0.0584     1.9138   0.0879  0.1529 -0.1670  0.2056         0.8412  0.7533             0.1072
+Saffron      kg/ha           Gradient Boosting      5    1.6130   0.1377     1.9529   0.0568  0.1358 -0.0876  0.2108         0.9700  0.9132             0.6930
+Saffron      kg/ha Histogram Gradient Boosting      5    1.6189   0.2172     1.9697   0.0346  0.2000 -0.1909  0.2561         0.9729  0.9382             0.9366
+Saffron      kg/ha               Decision Tree      5    1.6328   0.2619     2.0922  -0.0854  0.2477 -0.4911  0.1161         0.7180  0.8035             0.0860
+Saffron      kg/ha              KNN Regression      5    1.7019   0.2909     1.9986  -0.0047  0.3042 -0.4916  0.2275         1.0000  1.0047             0.1199
+Saffron      kg/ha            Ridge Regression      5    1.7458   0.2583     2.1003  -0.1013  0.2756 -0.5626  0.1129         0.3401  0.4414             0.0988
+Saffron      kg/ha             Dummy Regressor      5    1.7541   0.1347     2.0526  -0.0349  0.0163 -0.0621 -0.0188         0.0000  0.0349             0.0808
+Saffron      kg/ha    Simple Linear Regression      5    1.7593   0.1281     2.0591  -0.0418  0.0173 -0.0601 -0.0161         0.0019  0.0437             0.0587
+Saffron      kg/ha  Multiple Linear Regression      5    1.8054   0.2752     2.1861  -0.1986  0.3297 -0.7192  0.0990         0.3614  0.5600             0.0987
+Saffron      kg/ha               Random Forest     10    1.3844   0.3151     1.6847   0.2654  0.2082 -0.0254  0.7075         0.7911  0.5256             3.8454
+Saffron      kg/ha   Support Vector Regression     10    1.5380   0.2589     1.8989   0.0593  0.2783 -0.4068  0.4554         0.9720  0.9127             0.2025
+Saffron      kg/ha       Polynomial Regression     10    1.5393   0.2235     1.8839   0.0752  0.2525 -0.3675  0.5158         0.8280  0.7528             0.2092
+Saffron      kg/ha Histogram Gradient Boosting     10    1.5619   0.3144     1.9001   0.0515  0.2959 -0.2504  0.6779         0.9735  0.9220             2.1363
+Saffron      kg/ha               Decision Tree     10    1.5726   0.2925     2.0039  -0.0501  0.3091 -0.5909  0.4041         0.7069  0.7570             0.1581
+Saffron      kg/ha           Gradient Boosting     10    1.6053   0.3637     1.9204   0.0149  0.3742 -0.5473  0.7816         0.9647  0.9498             1.4689
+Saffron      kg/ha              KNN Regression     10    1.6219   0.2714     1.9394   0.0100  0.3160 -0.5630  0.3819         1.0000  0.9900             0.2256
+Saffron      kg/ha             Dummy Regressor     10    1.7520   0.1543     2.0499  -0.0741  0.1111 -0.3774 -0.0001         0.0000  0.0741             0.1328
+Saffron      kg/ha    Simple Linear Regression     10    1.7708   0.1562     2.0718  -0.0967  0.1062 -0.3803 -0.0171         0.0023  0.0990             0.1026
+Saffron      kg/ha            Ridge Regression     10    1.7755   0.2555     2.1214  -0.1653  0.2577 -0.5623  0.1552         0.3229  0.4882             0.1965
+Saffron      kg/ha  Multiple Linear Regression     10    1.8489   0.2762     2.2102  -0.2723  0.3178 -0.7739  0.1360         0.3412  0.6135             0.1690
+
+--- ORDINARY CROP REGRESSION STABILITY ---
+                             CV_3_MAE  CV_5_MAE  CV_10_MAE  Mean_CV_MAE
+Model                                                                  
+Random Forest                  2.1731    2.1615     2.1550       2.1632
+Gradient Boosting              2.1857    2.1773     2.1682       2.1771
+Histogram Gradient Boosting    2.1901    2.1789     2.1629       2.1773
+Decision Tree                  2.2602    2.2497     2.2245       2.2448
+Support Vector Regression      2.4776    2.4633     2.4481       2.4630
+Polynomial Regression          2.7142    2.6928     2.6758       2.6943
+KNN Regression                 3.1289    3.1082     3.0658       3.1010
+Multiple Linear Regression     3.1341    3.1349     3.1338       3.1343
+Ridge Regression               3.1357    3.1363     3.1350       3.1357
+Simple Linear Regression       4.8600    4.8602     4.8603       4.8602
+Dummy Regressor                4.8611    4.8614     4.8616       4.8614
+
+--- SAFFRON REGRESSION STABILITY ---
+                             CV_3_MAE  CV_5_MAE  CV_10_MAE  Mean_CV_MAE
+Model                                                                  
+Random Forest                  1.3924    1.4094     1.3844       1.3954
+Support Vector Regression      1.5363    1.5608     1.5380       1.5450
+Polynomial Regression          1.5464    1.5648     1.5393       1.5502
+Histogram Gradient Boosting    1.4863    1.6189     1.5619       1.5557
+Decision Tree                  1.5968    1.6328     1.5726       1.6007
+Gradient Boosting              1.6581    1.6130     1.6053       1.6255
+KNN Regression                 1.6864    1.7019     1.6219       1.6701
+Ridge Regression               1.7255    1.7458     1.7755       1.7489
+Dummy Regressor                1.7510    1.7541     1.7520       1.7524
+Simple Linear Regression       1.7534    1.7593     1.7708       1.7612
+Multiple Linear Regression     1.8047    1.8054     1.8489       1.8197
+
+===========================================================================
+CHRONOLOGICAL MODEL EVALUATION
+===========================================================================
+Training years: 2017-2024
+Testing years: 2025-2026
+
+Chronological classification training records: 7045
+Chronological classification testing records: 1742
+
+Chronological classification: Dummy Classifier
+
+Chronological classification: Decision Tree Gini
+
+Chronological classification: Decision Tree Entropy
+
+Chronological classification: Random Forest
+
+Chronological classification: Gaussian Naive Bayes
+
+Chronological classification: Linear SVM
+
+Chronological classification: RBF SVM
+
+Chronological classification: KNN
+
+Chronological classification: Logistic Regression
+
+Chronological classification: Gradient Boosting
+
+Chronological classification: Histogram Gradient Boosting
+
+Chronological classification: Tuned Decision Tree
+
+Chronological classification: Tuned KNN
+
+--- CHRONOLOGICAL CLASSIFICATION RESULTS ---
+                      Model  Train_Records  Test_Records  Accuracy  Macro_F1  Balanced_Accuracy  Severe_Errors  Severe_Error_Percent
+Histogram Gradient Boosting           7045          1742    0.9753    0.9688             0.9707             16                0.9185
+                    RBF SVM           7045          1742    0.9742    0.9629             0.9601              9                0.5166
+        Tuned Decision Tree           7045          1742    0.9661    0.9584             0.9644             23                1.3203
+         Decision Tree Gini           7045          1742    0.9661    0.9584             0.9644             23                1.3203
+      Decision Tree Entropy           7045          1742    0.9598    0.9517             0.9578             30                1.7222
+              Random Forest           7045          1742    0.9432    0.9324             0.9343             48                2.7555
+          Gradient Boosting           7045          1742    0.9420    0.9319             0.9278             53                3.0425
+                  Tuned KNN           7045          1742    0.8967    0.8623             0.8487             75                4.3054
+                        KNN           7045          1742    0.8582    0.7945             0.7867             75                4.3054
+        Logistic Regression           7045          1742    0.5712    0.5285             0.5543            256               14.6958
+                 Linear SVM           7045          1742    0.5408    0.5066             0.5642            246               14.1217
+       Gaussian Naive Bayes           7045          1742    0.4397    0.4198             0.4782            264               15.1550
+           Dummy Classifier           7045          1742    0.4874    0.2184             0.3333            646               37.0838
+
+Chronological Ordinary Crops: Dummy Regressor
+
+Chronological Ordinary Crops: Simple Linear Regression
+
+Chronological Ordinary Crops: Multiple Linear Regression
+
+Chronological Ordinary Crops: Polynomial Regression
+
+Chronological Ordinary Crops: Ridge Regression
+
+Chronological Ordinary Crops: Decision Tree
+
+Chronological Ordinary Crops: Random Forest
+
+Chronological Ordinary Crops: Gradient Boosting
+
+Chronological Ordinary Crops: Histogram Gradient Boosting
+
+Chronological Ordinary Crops: Support Vector Regression
+
+Chronological Ordinary Crops: KNN Regression
+
+--- CHRONOLOGICAL ORDINARY CROP RESULTS ---
+                      Model        Dataset Yield_Unit  Train_Records  Test_Records    MAE   RMSE      R2
+              Random Forest Ordinary Crops       t/ha           7495          1866 2.2430 3.2369  0.7478
+Histogram Gradient Boosting Ordinary Crops       t/ha           7495          1866 2.2472 3.1992  0.7537
+          Gradient Boosting Ordinary Crops       t/ha           7495          1866 2.2676 3.1858  0.7557
+              Decision Tree Ordinary Crops       t/ha           7495          1866 2.3163 3.2984  0.7381
+  Support Vector Regression Ordinary Crops       t/ha           7495          1866 2.7307 3.8397  0.6451
+      Polynomial Regression Ordinary Crops       t/ha           7495          1866 2.7968 3.8168  0.6494
+ Multiple Linear Regression Ordinary Crops       t/ha           7495          1866 3.2747 4.2840  0.5583
+           Ridge Regression Ordinary Crops       t/ha           7495          1866 3.2759 4.2844  0.5582
+             KNN Regression Ordinary Crops       t/ha           7495          1866 3.3205 4.5819  0.4947
+   Simple Linear Regression Ordinary Crops       t/ha           7495          1866 5.0063 6.4523 -0.0021
+            Dummy Regressor Ordinary Crops       t/ha           7495          1866 5.0074 6.4544 -0.0027
+
+Chronological Saffron: Dummy Regressor
+
+Chronological Saffron: Simple Linear Regression
+
+Chronological Saffron: Multiple Linear Regression
+
+Chronological Saffron: Polynomial Regression
+
+Chronological Saffron: Ridge Regression
+
+Chronological Saffron: Decision Tree
+
+Chronological Saffron: Random Forest
+
+Chronological Saffron: Gradient Boosting
+
+Chronological Saffron: Histogram Gradient Boosting
+
+Chronological Saffron: Support Vector Regression
+
+Chronological Saffron: KNN Regression
+
+--- CHRONOLOGICAL SAFFRON RESULTS ---
+                      Model Dataset Yield_Unit  Train_Records  Test_Records    MAE   RMSE      R2
+              Random Forest Saffron      kg/ha            147            42 1.4216 1.8419  0.2653
+Histogram Gradient Boosting Saffron      kg/ha            147            42 1.4841 1.8185  0.2838
+              Decision Tree Saffron      kg/ha            147            42 1.5541 2.0710  0.0711
+          Gradient Boosting Saffron      kg/ha            147            42 1.6171 2.0126  0.1228
+           Ridge Regression Saffron      kg/ha            147            42 1.6473 2.1448  0.0038
+             KNN Regression Saffron      kg/ha            147            42 1.7195 2.0099  0.1251
+ Multiple Linear Regression Saffron      kg/ha            147            42 1.7199 2.2642 -0.1103
+  Support Vector Regression Saffron      kg/ha            147            42 1.7601 2.0534  0.0869
+      Polynomial Regression Saffron      kg/ha            147            42 1.7734 2.0945  0.0499
+   Simple Linear Regression Saffron      kg/ha            147            42 1.8305 2.1419  0.0065
+            Dummy Regressor Saffron      kg/ha            147            42 1.8350 2.1502 -0.0013
+
+--- CLASSIFICATION GENERALIZATION COMPARISON ---
+                      Model  CV_3_Macro_F1  CV_5_Macro_F1  CV_10_Macro_F1  Mean_CV_F1  Chronological_F1  Chronological_Accuracy  Severe_Errors  F1_Difference
+Histogram Gradient Boosting         0.9668         0.9687          0.9697      0.9684            0.9688                  0.9753             16        -0.0004
+                    RBF SVM         0.9490         0.9553          0.9601      0.9548            0.9629                  0.9742              9        -0.0081
+         Decision Tree Gini         0.9467         0.9503          0.9560      0.9510            0.9584                  0.9661             23        -0.0074
+        Tuned Decision Tree         0.9454         0.9488          0.9536      0.9493            0.9584                  0.9661             23        -0.0091
+      Decision Tree Entropy         0.9438         0.9506          0.9486      0.9476            0.9517                  0.9598             30        -0.0041
+          Gradient Boosting         0.9309         0.9343          0.9356      0.9336            0.9319                  0.9420             53         0.0017
+              Random Forest         0.9256         0.9277          0.9353      0.9295            0.9324                  0.9432             48        -0.0029
+                  Tuned KNN         0.8458         0.8498          0.8511      0.8489            0.8623                  0.8967             75        -0.0134
+                        KNN         0.7664         0.7847          0.7981      0.7830            0.7945                  0.8582             75        -0.0115
+        Logistic Regression         0.5387         0.5371          0.5398      0.5385            0.5285                  0.5712            256         0.0100
+                 Linear SVM         0.5290         0.5231          0.5027      0.5183            0.5066                  0.5408            246         0.0116
+       Gaussian Naive Bayes         0.4619         0.4548          0.4566      0.4578            0.4198                  0.4397            264         0.0379
+           Dummy Classifier         0.2234         0.2234          0.2234      0.2234            0.2184                  0.4874            646         0.0050
+
+--- Ordinary Crops GENERALIZATION COMPARISON ---
+                      Model  CV_3_MAE  CV_5_MAE  CV_10_MAE  Mean_CV_MAE  Chronological_MAE  Chronological_R2  MAE_Difference
+              Random Forest    2.1731    2.1615     2.1550       2.1632             2.2430            0.7478          0.0798
+          Gradient Boosting    2.1857    2.1773     2.1682       2.1771             2.2676            0.7557          0.0906
+Histogram Gradient Boosting    2.1901    2.1789     2.1629       2.1773             2.2472            0.7537          0.0699
+              Decision Tree    2.2602    2.2497     2.2245       2.2448             2.3163            0.7381          0.0715
+  Support Vector Regression    2.4776    2.4633     2.4481       2.4630             2.7307            0.6451          0.2677
+      Polynomial Regression    2.7142    2.6928     2.6758       2.6943             2.7968            0.6494          0.1026
+             KNN Regression    3.1289    3.1082     3.0658       3.1010             3.3205            0.4947          0.2195
+ Multiple Linear Regression    3.1341    3.1349     3.1338       3.1343             3.2747            0.5583          0.1404
+           Ridge Regression    3.1357    3.1363     3.1350       3.1357             3.2759            0.5582          0.1402
+   Simple Linear Regression    4.8600    4.8602     4.8603       4.8602             5.0063           -0.0021          0.1461
+            Dummy Regressor    4.8611    4.8614     4.8616       4.8614             5.0074           -0.0027          0.1461
+
+--- Saffron GENERALIZATION COMPARISON ---
+                      Model  CV_3_MAE  CV_5_MAE  CV_10_MAE  Mean_CV_MAE  Chronological_MAE  Chronological_R2  MAE_Difference
+              Random Forest    1.3924    1.4094     1.3844       1.3954             1.4216            0.2653          0.0262
+  Support Vector Regression    1.5363    1.5608     1.5380       1.5450             1.7601            0.0869          0.2151
+      Polynomial Regression    1.5464    1.5648     1.5393       1.5502             1.7734            0.0499          0.2232
+Histogram Gradient Boosting    1.4863    1.6189     1.5619       1.5557             1.4841            0.2838         -0.0716
+              Decision Tree    1.5968    1.6328     1.5726       1.6007             1.5541            0.0711         -0.0466
+          Gradient Boosting    1.6581    1.6130     1.6053       1.6255             1.6171            0.1228         -0.0083
+             KNN Regression    1.6864    1.7019     1.6219       1.6701             1.7195            0.1251          0.0494
+           Ridge Regression    1.7255    1.7458     1.7755       1.7489             1.6473            0.0038         -0.1016
+            Dummy Regressor    1.7510    1.7541     1.7520       1.7524             1.8350           -0.0013          0.0826
+   Simple Linear Regression    1.7534    1.7593     1.7708       1.7612             1.8305            0.0065          0.0693
+ Multiple Linear Regression    1.8047    1.8054     1.8489       1.8197             1.7199           -0.1103         -0.0998
+
+--- Ordinary Crops BASELINE COMPARISON ---
+                      Model  Folds  Mean_MAE  Baseline_MAE  MAE_Improvement_Percent
+              Random Forest      3    2.1731        4.8611                  55.2972
+          Gradient Boosting      3    2.1857        4.8611                  55.0376
+Histogram Gradient Boosting      3    2.1901        4.8611                  54.9475
+              Decision Tree      3    2.2602        4.8611                  53.5039
+  Support Vector Regression      3    2.4776        4.8611                  49.0329
+      Polynomial Regression      3    2.7142        4.8611                  44.1644
+             KNN Regression      3    3.1289        4.8611                  35.6350
+ Multiple Linear Regression      3    3.1341        4.8611                  35.5263
+           Ridge Regression      3    3.1357        4.8611                  35.4943
+   Simple Linear Regression      3    4.8600        4.8611                   0.0236
+            Dummy Regressor      3    4.8611        4.8611                   0.0000
+              Random Forest      5    2.1615        4.8614                  55.5376
+          Gradient Boosting      5    2.1773        4.8614                  55.2117
+Histogram Gradient Boosting      5    2.1789        4.8614                  55.1784
+              Decision Tree      5    2.2497        4.8614                  53.7232
+  Support Vector Regression      5    2.4633        4.8614                  49.3301
+      Polynomial Regression      5    2.6928        4.8614                  44.6083
+             KNN Regression      5    3.1082        4.8614                  36.0635
+ Multiple Linear Regression      5    3.1349        4.8614                  35.5133
+           Ridge Regression      5    3.1363        4.8614                  35.4851
+   Simple Linear Regression      5    4.8602        4.8614                   0.0232
+            Dummy Regressor      5    4.8614        4.8614                   0.0000
+              Random Forest     10    2.1550        4.8616                  55.6733
+Histogram Gradient Boosting     10    2.1629        4.8616                  55.5116
+          Gradient Boosting     10    2.1682        4.8616                  55.4024
+              Decision Tree     10    2.2245        4.8616                  54.2434
+  Support Vector Regression     10    2.4481        4.8616                  49.6439
+      Polynomial Regression     10    2.6758        4.8616                  44.9613
+             KNN Regression     10    3.0658        4.8616                  36.9380
+ Multiple Linear Regression     10    3.1338        4.8616                  35.5393
+           Ridge Regression     10    3.1350        4.8616                  35.5147
+   Simple Linear Regression     10    4.8603        4.8616                   0.0271
+            Dummy Regressor     10    4.8616        4.8616                   0.0000
+
+--- Saffron BASELINE COMPARISON ---
+                      Model  Folds  Mean_MAE  Baseline_MAE  MAE_Improvement_Percent
+              Random Forest      3    1.3924        1.7510                  20.4790
+Histogram Gradient Boosting      3    1.4863        1.7510                  15.1210
+  Support Vector Regression      3    1.5363        1.7510                  12.2632
+      Polynomial Regression      3    1.5464        1.7510                  11.6886
+              Decision Tree      3    1.5968        1.7510                   8.8056
+          Gradient Boosting      3    1.6581        1.7510                   5.3086
+             KNN Regression      3    1.6864        1.7510                   3.6917
+           Ridge Regression      3    1.7255        1.7510                   1.4571
+            Dummy Regressor      3    1.7510        1.7510                   0.0000
+   Simple Linear Regression      3    1.7534        1.7510                  -0.1347
+ Multiple Linear Regression      3    1.8047        1.7510                  -3.0629
+              Random Forest      5    1.4094        1.7541                  19.6490
+  Support Vector Regression      5    1.5608        1.7541                  11.0189
+      Polynomial Regression      5    1.5648        1.7541                  10.7920
+          Gradient Boosting      5    1.6130        1.7541                   8.0429
+Histogram Gradient Boosting      5    1.6189        1.7541                   7.7061
+              Decision Tree      5    1.6328        1.7541                   6.9148
+             KNN Regression      5    1.7019        1.7541                   2.9730
+           Ridge Regression      5    1.7458        1.7541                   0.4724
+            Dummy Regressor      5    1.7541        1.7541                   0.0000
+   Simple Linear Regression      5    1.7593        1.7541                  -0.2979
+ Multiple Linear Regression      5    1.8054        1.7541                  -2.9276
+              Random Forest     10    1.3844        1.7520                  20.9806
+  Support Vector Regression     10    1.5380        1.7520                  12.2124
+      Polynomial Regression     10    1.5393        1.7520                  12.1367
+Histogram Gradient Boosting     10    1.5619        1.7520                  10.8466
+              Decision Tree     10    1.5726        1.7520                  10.2395
+          Gradient Boosting     10    1.6053        1.7520                   8.3691
+             KNN Regression     10    1.6219        1.7520                   7.4232
+            Dummy Regressor     10    1.7520        1.7520                   0.0000
+   Simple Linear Regression     10    1.7708        1.7520                  -1.0744
+           Ridge Regression     10    1.7755        1.7520                  -1.3419
+ Multiple Linear Regression     10    1.8489        1.7520                  -5.5351
+
+===========================================================================
+FINAL CROSS-VALIDATION SUMMARY
+===========================================================================
+
+Classification CV evaluations: 39
+Ordinary regression CV evaluations: 33
+Saffron regression CV evaluations: 33
+Total CV configurations evaluated: 105
+
+--- BEST CLASSIFICATION BY MEAN CV F1 ---
+                             CV_3_Macro_F1  CV_5_Macro_F1  CV_10_Macro_F1  Mean_CV_F1
+Model                                                                                
+Histogram Gradient Boosting         0.9668         0.9687          0.9697      0.9684
+RBF SVM                             0.9490         0.9553          0.9601      0.9548
+Decision Tree Gini                  0.9467         0.9503          0.9560      0.9510
+
+--- BEST CHRONOLOGICAL CLASSIFICATION ---
+                      Model  Train_Records  Test_Records  Accuracy  Macro_F1  Balanced_Accuracy  Severe_Errors  Severe_Error_Percent
+Histogram Gradient Boosting           7045          1742    0.9753    0.9688             0.9707             16                0.9185
+                    RBF SVM           7045          1742    0.9742    0.9629             0.9601              9                0.5166
+        Tuned Decision Tree           7045          1742    0.9661    0.9584             0.9644             23                1.3203
+
+--- BEST ORDINARY REGRESSION BY CV MAE ---
+                             CV_3_MAE  CV_5_MAE  CV_10_MAE  Mean_CV_MAE
+Model                                                                  
+Random Forest                  2.1731    2.1615     2.1550       2.1632
+Gradient Boosting              2.1857    2.1773     2.1682       2.1771
+Histogram Gradient Boosting    2.1901    2.1789     2.1629       2.1773
+
+--- BEST CHRONOLOGICAL ORDINARY REGRESSION ---
+                      Model        Dataset Yield_Unit  Train_Records  Test_Records    MAE   RMSE     R2
+              Random Forest Ordinary Crops       t/ha           7495          1866 2.2430 3.2369 0.7478
+Histogram Gradient Boosting Ordinary Crops       t/ha           7495          1866 2.2472 3.1992 0.7537
+          Gradient Boosting Ordinary Crops       t/ha           7495          1866 2.2676 3.1858 0.7557
+
+--- BEST SAFFRON REGRESSION BY CV MAE ---
+                           CV_3_MAE  CV_5_MAE  CV_10_MAE  Mean_CV_MAE
+Model                                                                
+Random Forest                1.3924    1.4094     1.3844       1.3954
+Support Vector Regression    1.5363    1.5608     1.5380       1.5450
+Polynomial Regression        1.5464    1.5648     1.5393       1.5502
+
+--- BEST CHRONOLOGICAL SAFFRON REGRESSION ---
+                      Model Dataset Yield_Unit  Train_Records  Test_Records    MAE   RMSE     R2
+              Random Forest Saffron      kg/ha            147            42 1.4216 1.8419 0.2653
+Histogram Gradient Boosting Saffron      kg/ha            147            42 1.4841 1.8185 0.2838
+              Decision Tree Saffron      kg/ha            147            42 1.5541 2.0710 0.0711
+
+Total execution minutes: 16.27
+
+--- VALIDATION STATUS ---
+3-fold cross-validation: Completed
+5-fold cross-validation: Completed
+10-fold cross-validation: Completed
+Chronological evaluation: Completed
+Baseline comparison: Completed
+Classification stability: Evaluated
+Ordinary regression stability: Evaluated
+Saffron regression stability: Evaluated
+Original dataset: Unchanged
+Final model improvement: Pending
+Final model selection: Pending
+Model files saved: No
+
+===========================================================================
+STEP 10 COMPLETED SUCCESSFULLY
+==================================================================

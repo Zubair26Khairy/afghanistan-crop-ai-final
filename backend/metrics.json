@@ -1,0 +1,21 @@
+{
+  "classification": {
+    "name": "Soft Voting Classifier",
+    "accuracy": 0.9845005740528129,
+    "macro_f1": 0.9785776068798612
+  },
+  "ordinary": {
+    "name": "Optimized Histogram Gradient Boosting",
+    "mae": 2.1499727631401417,
+    "rmse": 3.274168862145864,
+    "r2": 0.7419682941429999,
+    "unit": "t/ha"
+  },
+  "saffron": {
+    "name": "Regularized Random Forest",
+    "mae": 1.319303501400309,
+    "rmse": 1.7263329075631342,
+    "r2": 0.35458016384171986,
+    "unit": "kg/ha"
+  }
+}

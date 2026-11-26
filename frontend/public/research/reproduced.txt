@@ -1,0 +1,100 @@
+
+STEP 1: Load data
+Shape: (10000, 13) 
+Missing values: Year                     0
+Month                    0
+Month_Name               0
+Province                 0
+Crop                    50
+Temp_C                  50
+Rain_mm                  0
+Fertilizer_kg_ha        50
+Irrigation_Type          0
+Land_Hectares            0
+Yield_per_Hectare        0
+Total_Production         0
+Suitability_Category     0
+
+STEP 2: Data quality
+Missing               150
+Year                    0
+Month                  50
+Province               50
+Crop                  100
+Temperature           100
+Rain                   50
+Fertilizer              0
+Irrigation             50
+Land                   50
+Yield                   0
+Production              0
+Category                0
+Production formula     45
+dtype: int64
+Dirty rows: 500
+
+STEP 3: Clean and label
+Quarantined: 450
+Clean rows: 9550
+Suitability_Category
+Low       4662
+High      3326
+Medium    1562
+Name: count, dtype: int64
+
+STEP 4: Exploratory analysis
+              count     min       mean      max
+Crop                                           
+Almonds        1597  0.0000   1.264472   3.9459
+Apples         1170  0.0000   5.988663  16.4278
+Apricots        947  0.0000   4.017341  10.7398
+Figs            265  0.0000   3.983965  11.6862
+Grapes         1758  0.0000   6.730049  22.3512
+Melons          822  2.9663  14.712703  32.2840
+Oranges         377  0.0000   5.806003  14.8980
+Pine Nuts       574  0.0000   0.440005   1.3470
+Pistachios      401  0.0000   0.693307   2.0422
+Pomegranates   1147  0.0000   4.756020  15.3168
+Saffron         189  0.3480   3.632295   9.0617
+Watermelons     303  3.9430  19.497438  41.0080
+Zero yields: 1482
+/tmp/finalcrop/backend/Final_3_Models.py:142: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.tight_layout(); plt.show()
+
+STEP 5: Feature engineering
+Input shapes: (8787, 5) (9361, 10) (189, 9)
+Classification Train: 7045 Test: 1742
+Ordinary Train: 7495 Test: 1866
+Saffron Train: 147 Test: 42
+Classification Accuracy: 0.9845005740528129 Macro F1: 0.9785776068798612
+[[828  16   5]
+ [  2 241   4]
+ [  0   0 646]]
+Ordinary MAE: 2.1499727631401417 RMSE: 3.274168862145864 R2: 0.7419682941429999
+Saffron MAE: 1.319303501400309 RMSE: 1.7263329075631342 R2: 0.35458016384171986
+  Irrigation_Type  Predicted_Yield  Total_Production
+0            Drip         8.049524         40.247620
+1           Canal         7.512399         37.561994
+2         Rainfed         6.679114         33.395569
+           Crop ML_Category
+0       Almonds        High
+1        Apples         Low
+2      Apricots         Low
+3          Figs        High
+4        Grapes        High
+5        Melons      Medium
+6       Oranges         Low
+7    Pistachios         Low
+8  Pomegranates        High
+9   Watermelons         Low
+           Crop ML_Category Rule_Category Final_Category
+0       Almonds        High          High           High
+1        Apples         Low           Low            Low
+2      Apricots         Low           Low            Low
+3          Figs        High        Medium         Medium
+4        Grapes        High          High           High
+5        Melons      Medium        Medium         Medium
+6       Oranges         Low           Low            Low
+7    Pistachios         Low           Low            Low
+8  Pomegranates        High          High           High
+9   Watermelons         Low           Low            Low

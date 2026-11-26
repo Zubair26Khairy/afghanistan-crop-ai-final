@@ -1,0 +1,449 @@
+===========================================================================
+STEP 9: CLASSIFICATION MODEL TRAINING AND EVALUATION
+===========================================================================
+
+Training records: 7029
+Testing records: 1758
+Input features: ['Month_sin', 'Month_cos', 'Temp_C', 'Province', 'Crop']
+Primary evaluation metric: Macro F1
+Random state: 42
+
+--- MODEL COLLECTION CREATED ---
+Total classification algorithms: 13
+Hyperparameter tuning: 5-fold CV
+
+---------------------------------------------------------------------------
+[1/13] Training Dummy Classifier ...
+Training completed.
+Training accuracy: 50.41 %
+Testing accuracy: 50.4 %
+Testing Macro F1: 0.2234
+Balanced accuracy: 0.3333
+ROC-AUC: 0.5
+Training seconds: 0.009
+
+---------------------------------------------------------------------------
+[2/13] Training Decision Tree Gini ...
+Training completed.
+Training accuracy: 100.0 %
+Testing accuracy: 96.7 %
+Testing Macro F1: 0.9606
+Balanced accuracy: 0.9646
+ROC-AUC: 0.9739
+Training seconds: 0.038
+
+---------------------------------------------------------------------------
+[3/13] Training Decision Tree Entropy ...
+Training completed.
+Training accuracy: 100.0 %
+Testing accuracy: 95.22 %
+Testing Macro F1: 0.9481
+Balanced accuracy: 0.9521
+ROC-AUC: 0.9634
+Training seconds: 0.042
+
+---------------------------------------------------------------------------
+[4/13] Training Random Forest ...
+Training completed.
+Training accuracy: 97.38 %
+Testing accuracy: 94.31 %
+Testing Macro F1: 0.9333
+Balanced accuracy: 0.9399
+ROC-AUC: 0.9922
+Training seconds: 0.704
+
+---------------------------------------------------------------------------
+[5/13] Training Gaussian Naive Bayes ...
+Training completed.
+Training accuracy: 51.07 %
+Testing accuracy: 49.15 %
+Testing Macro F1: 0.4652
+Balanced accuracy: 0.5002
+ROC-AUC: 0.7073
+Training seconds: 0.014
+
+---------------------------------------------------------------------------
+[6/13] Training Linear SVM ...
+Training completed.
+Training accuracy: 53.61 %
+Testing accuracy: 54.78 %
+Testing Macro F1: 0.5124
+Balanced accuracy: 0.5543
+ROC-AUC: 0.7655
+Training seconds: 11.383
+
+---------------------------------------------------------------------------
+[7/13] Training RBF SVM ...
+Training completed.
+Training accuracy: 99.33 %
+Testing accuracy: 97.16 %
+Testing Macro F1: 0.9621
+Balanced accuracy: 0.9638
+ROC-AUC: 0.9968
+Training seconds: 4.432
+
+---------------------------------------------------------------------------
+[8/13] Training KNN ...
+Training completed.
+Training accuracy: 91.08 %
+Testing accuracy: 86.69 %
+Testing Macro F1: 0.8085
+Balanced accuracy: 0.8033
+ROC-AUC: 0.9415
+Training seconds: 0.01
+
+---------------------------------------------------------------------------
+[9/13] Training Logistic Regression ...
+Training completed.
+Training accuracy: 59.4 %
+Testing accuracy: 58.13 %
+Testing Macro F1: 0.5352
+Balanced accuracy: 0.5595
+ROC-AUC: 0.7897
+Training seconds: 0.062
+
+---------------------------------------------------------------------------
+[10/13] Training Gradient Boosting ...
+Training completed.
+Training accuracy: 95.83 %
+Testing accuracy: 94.25 %
+Testing Macro F1: 0.9308
+Balanced accuracy: 0.9291
+ROC-AUC: 0.9834
+Training seconds: 6.438
+
+---------------------------------------------------------------------------
+[11/13] Training Histogram Gradient Boosting ...
+Training completed.
+Training accuracy: 99.86 %
+Testing accuracy: 96.99 %
+Testing Macro F1: 0.964
+Balanced accuracy: 0.9665
+ROC-AUC: 0.9968
+Training seconds: 2.281
+
+---------------------------------------------------------------------------
+[12/13] Training Tuned Decision Tree ...
+Best parameters: {'model__class_weight': None, 'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2}
+Best CV Macro F1: 0.9506
+Training completed.
+Training accuracy: 100.0 %
+Testing accuracy: 95.22 %
+Testing Macro F1: 0.9481
+Balanced accuracy: 0.9521
+ROC-AUC: 0.9634
+Training seconds: 8.072
+
+---------------------------------------------------------------------------
+[13/13] Training Tuned KNN ...
+Best parameters: {'model__n_neighbors': 21, 'model__p': 2, 'model__weights': 'distance'}
+Best CV Macro F1: 0.8498
+Training completed.
+Training accuracy: 100.0 %
+Testing accuracy: 89.02 %
+Testing Macro F1: 0.852
+Balanced accuracy: 0.8419
+ROC-AUC: 0.9753
+Training seconds: 6.941
+
+===========================================================================
+CLASSIFICATION MODEL COMPARISON
+===========================================================================
+                      Model  Train_Accuracy  Test_Accuracy  Test_Macro_F1  Macro_Precision  Macro_Recall  Weighted_F1  Balanced_Accuracy    MCC  ROC_AUC  F1_Gap  Training_Seconds
+Histogram Gradient Boosting          0.9986         0.9699         0.9640           0.9620        0.9665       0.9698             0.9665 0.9504   0.9968  0.0348            2.2806
+                    RBF SVM          0.9933         0.9716         0.9621           0.9607        0.9638       0.9716             0.9638 0.9531   0.9968  0.0280            4.4323
+         Decision Tree Gini          1.0000         0.9670         0.9606           0.9571        0.9646       0.9670             0.9646 0.9457   0.9739  0.0394            0.0385
+      Decision Tree Entropy          1.0000         0.9522         0.9481           0.9449        0.9521       0.9522             0.9521 0.9217   0.9634  0.0519            0.0415
+        Tuned Decision Tree          1.0000         0.9522         0.9481           0.9449        0.9521       0.9522             0.9521 0.9217   0.9634  0.0519            8.0724
+              Random Forest          0.9738         0.9431         0.9333           0.9288        0.9399       0.9431             0.9399 0.9082   0.9922  0.0396            0.7043
+          Gradient Boosting          0.9583         0.9425         0.9308           0.9345        0.9291       0.9422             0.9291 0.9059   0.9834  0.0211            6.4382
+                  Tuned KNN          1.0000         0.8902         0.8520           0.8823        0.8419       0.8888             0.8419 0.8258   0.9753  0.1480            6.9410
+                        KNN          0.9108         0.8669         0.8085           0.8301        0.8033       0.8638             0.8033 0.7860   0.9415  0.0652            0.0095
+        Logistic Regression          0.5940         0.5813         0.5352           0.5461        0.5595       0.6020             0.5595 0.3589   0.7897  0.0142            0.0617
+                 Linear SVM          0.5361         0.5478         0.5124           0.5396        0.5543       0.5702             0.5543 0.3325   0.7655 -0.0117           11.3831
+       Gaussian Naive Bayes          0.5107         0.4915         0.4652           0.5149        0.5002       0.5248             0.5002 0.2705   0.7073  0.0191            0.0141
+           Dummy Classifier          0.5041         0.5040         0.2234           0.1680        0.3333       0.3378             0.3333 0.0000   0.5000  0.0000            0.0093
+
+--- BASELINE COMPARISON ---
+                      Model  Test_Accuracy  Test_Macro_F1  Accuracy_Improvement_PP  Macro_F1_Improvement
+Histogram Gradient Boosting         0.9699         0.9640                  46.5870                0.7406
+                    RBF SVM         0.9716         0.9621                  46.7577                0.7387
+         Decision Tree Gini         0.9670         0.9606                  46.3026                0.7372
+      Decision Tree Entropy         0.9522         0.9481                  44.8237                0.7247
+        Tuned Decision Tree         0.9522         0.9481                  44.8237                0.7247
+              Random Forest         0.9431         0.9333                  43.9135                0.7099
+          Gradient Boosting         0.9425         0.9308                  43.8567                0.7074
+                  Tuned KNN         0.8902         0.8520                  38.6234                0.6286
+                        KNN         0.8669         0.8085                  36.2912                0.5851
+        Logistic Regression         0.5813         0.5352                   7.7361                0.3118
+                 Linear SVM         0.5478         0.5124                   4.3800                0.2890
+       Gaussian Naive Bayes         0.4915         0.4652                  -1.2514                0.2418
+           Dummy Classifier         0.5040         0.2234                   0.0000                0.0000
+
+===========================================================================
+PROVISIONAL BEST CLASSIFICATION MODEL
+===========================================================================
+Model                 Histogram Gradient Boosting
+Train_Accuracy                           0.998577
+Test_Accuracy                            0.969852
+Train_Macro_F1                           0.998856
+Test_Macro_F1                            0.964032
+Macro_Precision                          0.962001
+Macro_Recall                             0.966465
+Weighted_F1                              0.969848
+Balanced_Accuracy                        0.966465
+MCC                                      0.950417
+ROC_AUC                                  0.996777
+F1_Gap                                   0.034824
+Training_Seconds                         2.280625
+Prediction_Seconds                       0.045703
+
+--- BEST MODEL CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+         Low     0.9884    0.9594    0.9737       886
+      Medium     0.9412    0.9449    0.9430       254
+        High     0.9565    0.9951    0.9754       618
+
+    accuracy                         0.9699      1758
+   macro avg     0.9620    0.9665    0.9640      1758
+weighted avg     0.9703    0.9699    0.9698      1758
+
+
+--- MEDIUM CATEGORY PERFORMANCE ---
+                      Model Category  Precision  Recall     F1  Support
+Histogram Gradient Boosting   Medium     0.9412  0.9449 0.9430      254
+         Decision Tree Gini   Medium     0.9266  0.9449 0.9357      254
+      Decision Tree Entropy   Medium     0.9261  0.9370 0.9315      254
+        Tuned Decision Tree   Medium     0.9261  0.9370 0.9315      254
+                    RBF SVM   Medium     0.9291  0.9291 0.9291      254
+              Random Forest   Medium     0.8880  0.9055 0.8967      254
+          Gradient Boosting   Medium     0.9163  0.8622 0.8884      254
+                  Tuned KNN   Medium     0.8624  0.6417 0.7359      254
+                        KNN   Medium     0.7254  0.5512 0.6264      254
+                 Linear SVM   Medium     0.2605  0.6378 0.3699      254
+        Logistic Regression   Medium     0.2731  0.5354 0.3617      254
+       Gaussian Naive Bayes   Medium     0.2036  0.5748 0.3007      254
+           Dummy Classifier   Medium     0.0000  0.0000 0.0000      254
+
+--- BEST MODEL CONFUSION MATRIX ---
+               Predicted Low  Predicted Medium  Predicted High
+Actual Low               850                12              24
+Actual Medium             10               240               4
+Actual High                0                 3             615
+
+--- Classification Feature Importance ---
+  Feature  Importance  Importance_Percent
+Month_cos      0.3346             33.4647
+   Temp_C      0.2671             26.7055
+Month_sin      0.1807             18.0731
+     Crop      0.1295             12.9505
+ Province      0.0881              8.8063
+
+--- MISCLASSIFICATION ANALYSIS ---
+Total testing records: 1758
+Correct predictions: 1705
+Incorrect predictions: 53
+
+First 15 misclassified records:
+ Month_sin  Month_cos  Temp_C  Province         Crop Actual_Category Predicted_Category  Correct_Prediction  Low_Probability  Medium_Probability  High_Probability
+     1.000      0.000   29.95 Nangarhar      Oranges            High             Medium               False           0.0823              0.8117            0.1060
+     0.500      0.866   12.28     Logar      Almonds            High             Medium               False           0.0046              0.8209            0.1745
+     0.866      0.500   20.20     Farah       Melons          Medium                Low               False           0.7408              0.1090            0.1502
+    -0.500      0.866   27.83    Takhar       Apples          Medium               High               False           0.1027              0.1399            0.7574
+     1.000      0.000   32.12   Jawzjan       Melons          Medium                Low               False           0.5174              0.2916            0.1910
+     0.000      1.000   26.44   Baghlan       Grapes             Low             Medium               False           0.0004              0.9995            0.0000
+     0.866      0.500   29.55  Panjshir       Grapes             Low               High               False           0.1068              0.0126            0.8806
+    -0.500      0.866   26.91   Badghis     Apricots             Low               High               False           0.1680              0.0009            0.8312
+     0.866      0.500   24.16     Kabul Pomegranates             Low               High               False           0.2184              0.0109            0.7707
+     0.000      1.000   26.86  Samangan       Apples             Low             Medium               False           0.2619              0.7380            0.0001
+     0.866      0.500   37.26  Kandahar       Melons             Low             Medium               False           0.3718              0.6281            0.0001
+     0.866     -0.500   19.41  Kandahar         Figs          Medium               High               False           0.1501              0.0077            0.8422
+     0.000      1.000   17.57 Nangarhar     Apricots             Low             Medium               False           0.4444              0.5556            0.0000
+     0.866      0.500   33.37   Helmand  Watermelons          Medium                Low               False           0.3785              0.2934            0.3281
+     0.866      0.500   22.11  Kandahar     Apricots             Low               High               False           0.1710              0.0020            0.8270
+
+--- SEVERE CLASSIFICATION ERRORS ---
+High/Low opposite-category errors: 24
+Severe error percentage: 1.3652 %
+
+--- CLASSIFICATION PERFORMANCE BY CROP ---
+        Crop  Test_Records  Correct_Predictions  Accuracy_Percent
+  Pistachios            71                   71          100.0000
+      Grapes           360                  354           98.3333
+     Almonds           308                  302           98.0519
+      Melons           156                  151           96.7949
+Pomegranates           243                  235           96.7078
+      Apples           225                  217           96.4444
+     Oranges            77                   74           96.1039
+        Figs            48                   46           95.8333
+    Apricots           209                  198           94.7368
+ Watermelons            61                   57           93.4426
+
+===========================================================================
+PRACTICAL CROP SUITABILITY PREDICTION
+===========================================================================
+Province: Kandahar
+Month: March
+Temperature: 28 C
+Crop: Pomegranates
+Model: Histogram Gradient Boosting
+Predicted suitability: High
+Low probability: 2.59 %
+Medium probability: 0.07 %
+High probability: 97.34 %
+
+===========================================================================
+CROP RECOMMENDATION: KANDAHAR
+Month: 3
+Temperature: 28 C
+ Rank         Crop Suitability  High_Probability  Medium_Probability  Low_Probability  Suitability_Score
+    1      Almonds        High             99.02                0.04             0.94              99.04
+    2       Grapes        High             98.27                0.24             1.49              98.39
+    3 Pomegranates        High             97.34                0.07             2.59              97.38
+    4         Figs        High             93.52                0.52             5.96              93.78
+    5     Apricots        High             84.19                0.05            15.77              84.21
+    6       Apples         Low             39.47                1.89            58.64              40.41
+    7       Melons         Low             19.56               31.22            49.22              35.17
+    8   Pistachios         Low             15.46                0.02            84.51              15.48
+    9      Oranges         Low              8.74                0.09            91.17               8.79
+   10  Watermelons         Low              8.42                0.17            91.41               8.50
+
+High-suitability candidates: Almonds, Grapes, Pomegranates, Figs, Apricots
+
+===========================================================================
+CROP RECOMMENDATION: BAMYAN
+Month: 2
+Temperature: 15 C
+ Rank         Crop Suitability  High_Probability  Medium_Probability  Low_Probability  Suitability_Score
+    1      Almonds        High             99.29                0.35             0.36              99.46
+    2     Apricots        High             97.47                1.53             1.00              98.24
+    3       Apples        High             97.23                0.90             1.87              97.68
+    4       Grapes      Medium              0.93               98.72             0.35              50.29
+    5 Pomegranates      Medium              0.47               93.24             6.30              47.09
+    6      Oranges      Medium              0.43               62.06            37.51              31.46
+    7   Pistachios         Low              4.01               11.03            84.96               9.53
+    8  Watermelons         Low              1.13               12.02            86.85               7.14
+    9         Figs         Low              1.54                9.83            88.63               6.46
+   10       Melons         Low              1.11                9.58            89.31               5.90
+
+High-suitability candidates: Almonds, Apricots, Apples
+
+===========================================================================
+CROP RECOMMENDATION: NANGARHAR
+Month: 4
+Temperature: 30 C
+ Rank         Crop Suitability  High_Probability  Medium_Probability  Low_Probability  Suitability_Score
+    1      Oranges      Medium             10.60               81.17             8.23              51.19
+    2       Grapes      Medium              0.08               99.40             0.52              49.78
+    3 Pomegranates      Medium              0.36               98.08             1.57              49.40
+    4      Almonds      Medium              0.02               97.76             2.21              48.91
+    5     Apricots      Medium              0.31               95.82             3.88              48.21
+    6       Apples      Medium              0.38               66.27            33.34              33.52
+    7   Pistachios      Medium              0.30               59.83            39.87              30.22
+    8       Melons         Low             33.37               33.05            33.58              49.89
+    9         Figs         Low              0.49               33.62            65.89              17.30
+   10  Watermelons         Low              7.74                7.70            84.56              11.59
+
+No crop classified as High suitability.
+
+===========================================================================
+CROP RECOMMENDATION: HERAT
+Month: 3
+Temperature: 22 C
+ Rank         Crop Suitability  High_Probability  Medium_Probability  Low_Probability  Suitability_Score
+    1      Almonds        High             99.70                0.04             0.27              99.71
+    2       Grapes        High             99.24                0.09             0.67              99.28
+    3         Figs        High             97.56                0.32             2.12              97.72
+    4 Pomegranates        High             65.42               21.32            13.27              76.08
+    5       Apples        High             64.03                0.78            35.20              64.42
+    6     Apricots         Low             48.94                0.96            50.10              49.42
+    7       Melons         Low              2.18                8.19            89.64               6.27
+    8   Pistachios         Low              4.04                0.17            95.80               4.12
+    9  Watermelons         Low              2.52                1.57            95.91               3.30
+   10      Oranges         Low              2.19                0.38            97.43               2.38
+
+High-suitability candidates: Almonds, Grapes, Figs, Pomegranates, Apples
+
+===========================================================================
+CROP RECOMMENDATION: KUNDUZ
+Month: 5
+Temperature: 27 C
+ Rank         Crop Suitability  High_Probability  Medium_Probability  Low_Probability  Suitability_Score
+    1       Melons        High             99.55                0.22             0.23              99.66
+    2     Apricots         Low              8.58                0.19            91.23               8.67
+    3      Oranges         Low              6.19                3.72            90.10               8.05
+    4  Watermelons         Low              7.09                0.17            92.74               7.17
+    5       Apples         Low              5.14                0.24            94.62               5.26
+    6         Figs         Low              2.93                3.79            93.28               4.82
+    7   Pistachios         Low              2.36                0.06            97.58               2.39
+    8       Grapes         Low              2.06                0.03            97.91               2.08
+    9 Pomegranates         Low              1.06                0.10            98.84               1.11
+   10      Almonds         Low              0.09                0.04            99.86               0.12
+
+High-suitability candidates: Melons
+
+===========================================================================
+COMBINED CLASSIFICATION AND REGRESSION
+===========================================================================
+        Crop Suitability  Suitability_Score  Predicted_Yield_t_ha  Predicted_Production_tonnes
+     Almonds        High            99.0433                1.8679                       9.3395
+      Grapes        High            98.3878               11.5289                      57.6445
+Pomegranates        High            97.3751                7.0124                      35.0619
+        Figs        High            93.7827                6.3116                      31.5578
+    Apricots        High            84.2102                6.2482                      31.2412
+      Apples         Low            40.4125                5.5052                      27.5260
+      Melons         Low            35.1691               23.2955                     116.4773
+  Pistachios         Low            15.4758                1.1059                       5.5295
+     Oranges         Low             8.7858                7.7700                      38.8500
+ Watermelons         Low             8.5033               31.0736                     155.3680
+
+Note: Ranking is based on provisional suitability, not total harvest weight.
+
+--- CLASSIFICATION COVERAGE ---
+Supported crops: ['Almonds', 'Apples', 'Apricots', 'Figs', 'Grapes', 'Melons', 'Oranges', 'Pistachios', 'Pomegranates', 'Watermelons']
+Unsupported crops: ['Pine Nuts', 'Saffron']
+Unsupported crops are not automatically classified as Low.
+
+===========================================================================
+FINAL CLASSIFICATION TRAINING SUMMARY
+===========================================================================
+Classification models trained: 13
+Regression models trained: 22
+Total model approaches trained: 35
+Provisional best classifier: Histogram Gradient Boosting
+Testing accuracy: 96.9852 %
+Macro F1: 0.964
+Balanced accuracy: 0.9665
+ROC-AUC: 0.9968
+Training-testing F1 gap: 0.0348
+Total execution seconds: 45.57
+
+--- HYPERPARAMETER TUNING RESULTS ---
+
+Model: Tuned Decision Tree
+Best parameters: {'model__class_weight': None, 'model__criterion': 'entropy', 'model__max_depth': None, 'model__min_samples_leaf': 1, 'model__min_samples_split': 2}
+Best CV Macro F1: 0.9506
+
+Model: Tuned KNN
+Best parameters: {'model__n_neighbors': 21, 'model__p': 2, 'model__weights': 'distance'}
+Best CV Macro F1: 0.8498
+
+--- VALIDATION RESULTS ---
+Classification training: Successful
+Hyperparameter tuning: Successful
+Class probability validation: Successful
+Confusion matrix analysis: Successful
+Per-class evaluation: Successful
+Per-crop evaluation: Successful
+Crop recommendation: Successful
+Combined prediction: Successful
+Original dataset: Unchanged
+Final model selection: Pending
+Full 3/5/10-fold comparison: Pending
+Chronological evaluation: Pending
+Model files saved: No
+
+===========================================================================
+STEP 9 COMPLETED SUCCESSFULLY
+===========================================================================

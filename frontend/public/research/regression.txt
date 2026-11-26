@@ -1,0 +1,460 @@
+STEP 8: REGRESSION MODEL TRAINING AND EVALUATION
+===========================================================================
+
+Random state: 42
+Random Forest trees: 200
+Parallel jobs: 2
+
+--- MODEL COLLECTIONS CREATED ---
+Ordinary regression algorithms: 11
+Saffron regression algorithms: 11
+Total models to train: 22
+
+===========================================================================
+ORDINARY CROP REGRESSION
+===========================================================================
+Training records: 7488
+Testing records: 1873
+Yield unit: t/ha
+
+[1/11] Training Dummy Regressor ...
+Training completed.
+Train R2: 0.0000
+Test R2: -0.0006
+Test MAE: 4.8923 t/ha
+Test RMSE: 6.2315 t/ha
+Training time: 0.011 seconds
+
+[2/11] Training Simple Linear Regression ...
+Training completed.
+Train R2: 0.0006
+Test R2: -0.0000
+Test MAE: 4.8909 t/ha
+Test RMSE: 6.2296 t/ha
+Training time: 0.019 seconds
+
+[3/11] Training Multiple Linear Regression ...
+Training completed.
+Train R2: 0.5613
+Test R2: 0.5252
+Test MAE: 3.2427 t/ha
+Test RMSE: 4.2928 t/ha
+Training time: 0.041 seconds
+
+[4/11] Training Polynomial Regression ...
+Training completed.
+Train R2: 0.7028
+Test R2: 0.6461
+Test MAE: 2.6751 t/ha
+Test RMSE: 3.7057 t/ha
+Training time: 0.435 seconds
+
+[5/11] Training Ridge Regression ...
+Training completed.
+Train R2: 0.5612
+Test R2: 0.5251
+Test MAE: 3.2437 t/ha
+Test RMSE: 4.2928 t/ha
+Training time: 0.019 seconds
+
+[6/11] Training Decision Tree ...
+Training completed.
+Train R2: 0.7781
+Test R2: 0.7315
+Test MAE: 2.2372 t/ha
+Test RMSE: 3.2283 t/ha
+Training time: 0.068 seconds
+
+[7/11] Training Random Forest ...
+Training completed.
+Train R2: 0.8821
+Test R2: 0.7443
+Test MAE: 2.1680 t/ha
+Test RMSE: 3.1504 t/ha
+Training time: 4.441 seconds
+
+[8/11] Training Gradient Boosting ...
+Training completed.
+Train R2: 0.7755
+Test R2: 0.7496
+Test MAE: 2.1847 t/ha
+Test RMSE: 3.1174 t/ha
+Training time: 3.807 seconds
+
+[9/11] Training Histogram Gradient Boosting ...
+Training completed.
+Train R2: 0.8426
+Test R2: 0.7489
+Test MAE: 2.1757 t/ha
+Test RMSE: 3.1217 t/ha
+Training time: 2.821 seconds
+
+[10/11] Training Support Vector Regression ...
+Training completed.
+Train R2: 0.8016
+Test R2: 0.6803
+Test MAE: 2.4633 t/ha
+Test RMSE: 3.5223 t/ha
+Training time: 5.526 seconds
+
+[11/11] Training KNN Regression ...
+Training completed.
+Train R2: 1.0000
+Test R2: 0.5416
+Test MAE: 3.0279 t/ha
+Test RMSE: 4.2178 t/ha
+Training time: 0.013 seconds
+
+---------------------------------------------------------------------------
+Total execution time: 27.25 seconds
+
+===========================================================================
+SAFFRON REGRESSION
+===========================================================================
+Training records: 151
+Testing records: 38
+Yield unit: kg/ha
+
+[1/11] Training Dummy Regressor ...
+Training completed.
+Train R2: 0.0000
+Test R2: -0.0642
+Test MAE: 1.7364 kg/ha
+Test RMSE: 1.8967 kg/ha
+Training time: 0.007 seconds
+
+[2/11] Training Simple Linear Regression ...
+Training completed.
+Train R2: 0.0011
+Test R2: -0.0484
+Test MAE: 1.7191 kg/ha
+Test RMSE: 1.8826 kg/ha
+Training time: 0.004 seconds
+
+[3/11] Training Multiple Linear Regression ...
+Training completed.
+Train R2: 0.3205
+Test R2: -0.1062
+Test MAE: 1.5949 kg/ha
+Test RMSE: 1.9338 kg/ha
+Training time: 0.009 seconds
+
+[4/11] Training Polynomial Regression ...
+Training completed.
+Train R2: 0.8165
+Test R2: 0.0671
+Test MAE: 1.4508 kg/ha
+Test RMSE: 1.7759 kg/ha
+Training time: 0.011 seconds
+
+[5/11] Training Ridge Regression ...
+Training completed.
+Train R2: 0.3047
+Test R2: 0.0134
+Test MAE: 1.5369 kg/ha
+Test RMSE: 1.8262 kg/ha
+Training time: 0.009 seconds
+
+[6/11] Training Decision Tree ...
+Training completed.
+Train R2: 0.7166
+Test R2: -0.2550
+Test MAE: 1.6029 kg/ha
+Test RMSE: 2.0597 kg/ha
+Training time: 0.005 seconds
+
+[7/11] Training Random Forest ...
+Training completed.
+Train R2: 0.7902
+Test R2: 0.0753
+Test MAE: 1.4665 kg/ha
+Test RMSE: 1.7681 kg/ha
+Training time: 0.291 seconds
+
+[8/11] Training Gradient Boosting ...
+Training completed.
+Train R2: 0.9587
+Test R2: -0.0404
+Test MAE: 1.5273 kg/ha
+Test RMSE: 1.8753 kg/ha
+Training time: 0.161 seconds
+
+[9/11] Training Histogram Gradient Boosting ...
+Training completed.
+Train R2: 0.9698
+Test R2: -0.0032
+Test MAE: 1.4313 kg/ha
+Test RMSE: 1.8416 kg/ha
+Training time: 0.242 seconds
+
+[10/11] Training Support Vector Regression ...
+Training completed.
+Train R2: 0.9688
+Test R2: -0.0588
+Test MAE: 1.4946 kg/ha
+Test RMSE: 1.8919 kg/ha
+Training time: 0.011 seconds
+
+[11/11] Training KNN Regression ...
+Training completed.
+Train R2: 1.0000
+Test R2: -0.1438
+Test MAE: 1.6529 kg/ha
+Test RMSE: 1.9664 kg/ha
+Training time: 0.006 seconds
+
+---------------------------------------------------------------------------
+Total execution time: 1.21 seconds
+
+===========================================================================
+ORDINARY CROP REGRESSION COMPARISON
+Yield unit: tonnes/hectare
+===========================================================================
+                      Model  Train_MAE  Test_MAE  Test_RMSE  Train_R2  Test_R2  R2_Gap  NMAE_Percent  Training_Seconds
+              Random Forest     1.4174    2.1680     3.1504    0.8821   0.7443  0.1379       39.9860            4.4413
+Histogram Gradient Boosting     1.7367    2.1757     3.1217    0.8426   0.7489  0.0937       40.1275            2.8211
+          Gradient Boosting     2.0419    2.1847     3.1174    0.7755   0.7496  0.0259       40.2933            3.8073
+              Decision Tree     1.9540    2.2372     3.2283    0.7781   0.7315  0.0467       41.2609            0.0675
+  Support Vector Regression     1.5627    2.4633     3.5223    0.8016   0.6803  0.1212       45.4311            5.5260
+      Polynomial Regression     2.4621    2.6751     3.7057    0.7028   0.6461  0.0567       49.3384            0.4347
+             KNN Regression     0.0000    3.0279     4.2178    1.0000   0.5416  0.4584       55.8453            0.0133
+ Multiple Linear Regression     3.1102    3.2427     4.2928    0.5613   0.5252  0.0361       59.8068            0.0405
+           Ridge Regression     3.1114    3.2437     4.2928    0.5612   0.5251  0.0361       59.8253            0.0190
+   Simple Linear Regression     4.8593    4.8909     6.2296    0.0006  -0.0000  0.0006       90.2052            0.0193
+            Dummy Regressor     4.8609    4.8923     6.2315    0.0000  -0.0006  0.0006       90.2305            0.0115
+
+===========================================================================
+SAFFRON REGRESSION COMPARISON
+Yield unit: kilograms/hectare
+===========================================================================
+                      Model  Train_MAE  Test_MAE  Test_RMSE  Train_R2  Test_R2  R2_Gap  NMAE_Percent  Training_Seconds
+Histogram Gradient Boosting     0.2597    1.4313     1.8416    0.9698  -0.0032  0.9730       43.9027            0.2418
+      Polynomial Regression     0.7028    1.4508     1.7759    0.8165   0.0671  0.7494       44.5005            0.0108
+              Random Forest     0.7404    1.4665     1.7681    0.7902   0.0753  0.7150       44.9811            0.2910
+  Support Vector Regression     0.1603    1.4946     1.8919    0.9688  -0.0588  1.0276       45.8436            0.0107
+          Gradient Boosting     0.3288    1.5273     1.8753    0.9587  -0.0404  0.9991       46.8464            0.1610
+           Ridge Regression     1.4234    1.5369     1.8262    0.3047   0.0134  0.2913       47.1414            0.0088
+ Multiple Linear Regression     1.3845    1.5949     1.9338    0.3205  -0.1062  0.4267       48.9200            0.0091
+              Decision Tree     0.8196    1.6029     2.0597    0.7166  -0.2550  0.9716       49.1666            0.0046
+             KNN Regression     0.0000    1.6529     1.9664    1.0000  -0.1438  1.1438       50.6977            0.0060
+   Simple Linear Regression     1.7458    1.7191     1.8826    0.0011  -0.0484  0.0496       52.7287            0.0043
+            Dummy Regressor     1.7451    1.7364     1.8967    0.0000  -0.0642  0.0642       53.2606            0.0071
+
+--- ORDINARY CROP BASELINE COMPARISON ---
+                      Model  Test_MAE  MAE_Improvement_Percent  Beats_Baseline
+              Random Forest    2.1680                  55.6846            True
+Histogram Gradient Boosting    2.1757                  55.5278            True
+          Gradient Boosting    2.1847                  55.3441            True
+              Decision Tree    2.2372                  54.2717            True
+  Support Vector Regression    2.4633                  49.6499            True
+      Polynomial Regression    2.6751                  45.3196            True
+             KNN Regression    3.0279                  38.1081            True
+ Multiple Linear Regression    3.2427                  33.7178            True
+           Ridge Regression    3.2437                  33.6973            True
+   Simple Linear Regression    4.8909                   0.0280            True
+            Dummy Regressor    4.8923                   0.0000           False
+
+--- SAFFRON BASELINE COMPARISON ---
+                      Model  Test_MAE  MAE_Improvement_Percent  Beats_Baseline
+Histogram Gradient Boosting    1.4313                  17.5700            True
+      Polynomial Regression    1.4508                  16.4476            True
+              Random Forest    1.4665                  15.5452            True
+  Support Vector Regression    1.4946                  13.9258            True
+          Gradient Boosting    1.5273                  12.0430            True
+           Ridge Regression    1.5369                  11.4892            True
+ Multiple Linear Regression    1.5949                   8.1497            True
+              Decision Tree    1.6029                   7.6867            True
+             KNN Regression    1.6529                   4.8119            True
+   Simple Linear Regression    1.7191                   0.9985            True
+            Dummy Regressor    1.7364                   0.0000           False
+
+===========================================================================
+PROVISIONAL TOP-PERFORMING MODELS
+===========================================================================
+
+Ordinary crop regression:
+Model                   Random Forest
+Train_MAE                    1.417361
+Test_MAE                     2.168034
+Test_MSE                      9.92482
+Test_RMSE                    3.150368
+Train_R2                     0.882117
+Test_R2                      0.744259
+R2_Gap                       0.137859
+NMAE_Percent                39.985979
+Negative_Predictions                0
+Training_Seconds              4.44127
+Prediction_Seconds           0.069849
+
+Saffron regression:
+Model                   Histogram Gradient Boosting
+Train_MAE                                  0.259677
+Test_MAE                                    1.43133
+Test_MSE                                   3.391414
+Test_RMSE                                  1.841579
+Train_R2                                   0.969808
+Test_R2                                    -0.00324
+R2_Gap                                     0.973048
+NMAE_Percent                              43.902685
+Negative_Predictions                              0
+Training_Seconds                           0.241824
+Prediction_Seconds                         0.006409
+
+===========================================================================
+PER-CROP EVALUATION
+Model: Random Forest
+===========================================================================
+        Crop  Test_Records  Actual_Mean  Predicted_Mean    MAE   RMSE     R2  NMAE_Percent
+     Almonds           320       1.2505          1.2170 0.6383 0.8033 0.2914       51.0436
+      Apples           234       6.2788          6.0059 3.2245 3.9611 0.2635       51.3558
+    Apricots           189       3.7069          4.0552 2.1474 2.7691 0.1477       57.9292
+        Figs            53       4.1154          4.0961 2.0592 2.6683 0.3011       50.0359
+      Grapes           352       6.5902          6.8262 3.5438 4.5401 0.2128       53.7744
+      Melons           164      14.3434         14.3443 1.8729 2.7246 0.8673       13.0575
+     Oranges            75       5.6089          5.4483 3.0611 3.8480 0.2786       54.5760
+   Pine Nuts           115       0.4666          0.4229 0.2558 0.3120 0.2161       54.8262
+  Pistachios            80       0.6118          0.7210 0.3810 0.5075 0.0091       62.2758
+Pomegranates           230       4.2754          4.8205 2.6263 3.3609 0.1836       61.4280
+ Watermelons            61      19.4849         18.9061 2.2758 3.3172 0.8674       11.6801
+
+--- MACRO-AVERAGED CROP PERFORMANCE ---
+                             Macro_MAE  Macro_RMSE  Macro_R2  Macro_NMAE_Percent
+Model                                                                           
+Random Forest                   2.0078      2.6193    0.3308             47.4529
+Decision Tree                   2.1055      2.7479    0.2366             50.2676
+Histogram Gradient Boosting     2.0120      2.6122    0.2287             50.4269
+Gradient Boosting               2.0530      2.6608    0.1416             51.7199
+Support Vector Regression       2.4472      3.1836   -0.3536             61.7837
+Polynomial Regression           2.7508      3.4702   -1.2612             73.3178
+Multiple Linear Regression      3.3254      3.8784   -0.5235             74.0083
+Ridge Regression                3.3273      3.8793   -0.5325             74.1293
+KNN Regression                  3.1677      4.2033   -8.6980            115.9087
+Simple Linear Regression        5.4467      6.1845  -29.7286            256.8893
+Dummy Regressor                 5.4525      6.1897  -29.9772            257.5615
+
+--- ORDINARY CROP PREDICTION EXAMPLES ---
+  Province         Crop Irrigation_Type  Land_Hectares  Actual_Yield  Predicted_Yield  Absolute_Error  Actual_Production  Predicted_Production
+Badakhshan     Apricots           Canal          20.39         0.000            4.922           4.922              0.000               100.359
+   Badghis Pomegranates            Drip          12.87         8.276            6.943           1.333            106.508                89.353
+  Nuristan    Pine Nuts           Canal          22.76         0.000            0.121           0.121              0.000                 2.752
+     Zabul      Almonds            Drip          23.46         2.444            1.428           1.016             57.343                33.505
+    Bamyan       Apples            Drip          21.23         2.918            1.242           1.676             61.951                26.363
+    Nimroz       Grapes           Canal           7.16        12.508            8.954           3.554             89.560                64.110
+   Paktika    Pine Nuts           Canal          13.72         0.000            0.548           0.548              0.000                 7.525
+   Laghman       Grapes         Rainfed           8.39         4.932            6.813           1.881             41.384                57.163
+     Farah     Apricots           Canal          23.80         2.692            5.630           2.938             64.067               133.986
+   Jawzjan Pomegranates            Drip          24.48        10.398            6.686           3.712            254.553               163.671
+    Bamyan      Almonds           Canal           4.22         0.617            0.503           0.114              2.605                 2.123
+    Faryab       Grapes           Canal          24.04        15.771            8.565           7.206            379.135               205.897
+    Bamyan  Watermelons            Drip           3.74         6.231            6.891           0.659             23.305                25.771
+     Balkh       Grapes            Drip          24.73        16.058            8.894           7.163            397.107               219.957
+    Paktia       Grapes           Canal           6.79         0.000           10.655          10.655              0.000                72.348
+
+--- SAFFRON PREDICTION EXAMPLES ---
+All yield and production values use kilograms.
+Province Irrigation_Type  Land_Hectares  Actual_Yield  Predicted_Yield  Absolute_Error  Actual_Production  Predicted_Production
+   Herat         Rainfed          17.19         0.920            0.254           0.665             15.806                 4.374
+Kandahar           Canal          13.44         2.341            6.680           4.340             31.458                89.785
+  Parwan         Rainfed           7.50         5.478            4.436           1.042             41.084                33.268
+   Herat         Rainfed          16.73         1.361            0.710           0.651             22.763                11.875
+  Bamyan           Canal           1.50         5.006            2.937           2.069              7.509                 4.406
+   Herat           Canal          13.81         5.632            4.575           1.057             77.777                63.181
+Kandahar           Canal          11.70         6.441            4.502           1.939             75.359                52.675
+   Herat         Rainfed          11.42         1.080            2.559           1.479             12.329                29.219
+   Herat            Drip           1.02         5.018            5.166           0.148              5.119                 5.270
+Nuristan           Canal           8.21         0.518            1.441           0.923              4.254                11.831
+
+Mean residual (Random Forest): -0.0828 t/ha
+
+Mean residual (Histogram Gradient Boosting): -0.5508 kg/ha
+
+--- Ordinary Crop Feature Importance ---
+         Feature  Importance  Importance_Percent
+            Crop      0.6010             60.1038
+          Temp_C      0.2558             25.5821
+   Land_Hectares      0.0271              2.7064
+ Irrigation_Type      0.0253              2.5301
+Fertilizer_kg_ha      0.0252              2.5234
+         Rain_mm      0.0246              2.4624
+        Province      0.0128              1.2775
+            Year      0.0121              1.2146
+       Month_sin      0.0093              0.9256
+       Month_cos      0.0067              0.6741
+
+--- Saffron Feature Importance ---
+         Feature  Importance  Importance_Percent
+          Temp_C      0.5503             55.0268
+Fertilizer_kg_ha      0.1150             11.4976
+   Land_Hectares      0.0740              7.3963
+         Rain_mm      0.0627              6.2744
+ Irrigation_Type      0.0572              5.7197
+       Month_cos      0.0508              5.0756
+            Year      0.0474              4.7424
+       Month_sin      0.0215              2.1498
+        Province      0.0212              2.1174
+
+===========================================================================
+PRACTICAL CROP YIELD PREDICTION
+===========================================================================
+
+Year: 2027
+Month: March
+Province: Kandahar
+Crop: Pomegranates
+Temperature: 28 C
+Rainfall: 300 mm
+Fertilizer: 120 kg/ha
+Irrigation: Drip
+Land: 5 hectares
+
+Model: Random Forest
+Predicted yield: 7.0124 t/ha
+Predicted total production: 35.0619 tonnes
+Note: This is an experimental synthetic-data prediction for a later year.
+
+===========================================================================
+PRACTICAL IRRIGATION COMPARISON
+===========================================================================
+Irrigation_Type  Predicted_Yield_t_ha  Predicted_Production_tonnes
+          Canal                7.0545                      35.2724
+           Drip                7.0124                      35.0619
+        Rainfed                5.2675                      26.3376
+
+Highest predicted yield: Canal
+Note: Model-based scenario comparison, not a proven causal irrigation effect.
+
+===========================================================================
+FINAL REGRESSION TRAINING SUMMARY
+===========================================================================
+Ordinary regression models trained: 11
+Saffron regression models trained: 11
+Total regression models trained: 22
+
+--- ORDINARY CROP REGRESSION ---
+Provisional best model: Random Forest
+Test MAE: 2.168 t/ha
+Test RMSE: 3.1504 t/ha
+Test R2: 0.7443
+
+--- SAFFRON REGRESSION ---
+Provisional best model: Histogram Gradient Boosting
+Test MAE: 1.4313 kg/ha
+Test RMSE: 1.8416 kg/ha
+Test R2: -0.0032
+
+--- VALIDATION RESULTS ---
+Regression training: Successful
+Preprocessing pipelines: Successful
+Nonnegative predictions: Successful
+Per-crop evaluation: Successful
+Feature importance analysis: Successful
+Irrigation scenario comparison: Successful
+Original dataset: Unchanged
+Final model selection: Pending
+Cross-validation: Pending
+Chronological evaluation: Pending
+Model files saved: No
+
+===========================================================================
+STEP 8 COMPLETED SUCCESSFULLY
+===========================================================================

@@ -1,0 +1,334 @@
+===========================================================================
+STEP 11: ADVANCED MODEL OPTIMIZATION
+===========================================================================
+
+--- CHRONOLOGICAL DATASETS ---
+Classification: 7045 1742
+Ordinary regression: 7495 1866
+Saffron regression: 147 42
+
+--- EXPANDING-YEAR VALIDATION ---
+Fold 1: Train 2017-2019 | Validate 2020 | Training records: 2638 | Validation records: 873
+Fold 2: Train 2017-2020 | Validate 2021 | Training records: 3511 | Validation records: 887
+Fold 3: Train 2017-2021 | Validate 2022 | Training records: 4398 | Validation records: 883
+Fold 4: Train 2017-2022 | Validate 2023 | Training records: 5281 | Validation records: 880
+Fold 5: Train 2017-2023 | Validate 2024 | Training records: 6161 | Validation records: 884
+
+===========================================================================
+CLASSIFICATION OPTIMIZATION
+===========================================================================
+
+---------------------------------------------------------------------------
+Suitability | [1/3] Optimized Histogram GB
+Best parameters:
+{'model__min_samples_leaf': 20, 'model__max_leaf_nodes': 63, 'model__max_iter': 350, 'model__max_depth': None, 'model__learning_rate': 0.15, 'model__l2_regularization': 0}
+
+Validation results:
+Seconds : 132.4479
+CV_Accuracy : 0.9739
+CV_Macro_F1 : 0.9674
+CV_F1_Std : 0.012
+Train_F1 : 1.0
+Severe_Error_Percent : 1.0678
+False_High_Percent : 2.0406
+F1_Gap : 0.0326
+
+---------------------------------------------------------------------------
+Suitability | [2/3] Optimized RBF SVM
+Best parameters:
+{'model__gamma': 'scale', 'model__class_weight': 'balanced', 'model__C': 50}
+
+Validation results:
+Seconds : 191.3291
+CV_Accuracy : 0.9643
+CV_Macro_F1 : 0.9479
+CV_F1_Std : 0.0142
+Train_F1 : 0.9981
+Severe_Error_Percent : 0.6599
+False_High_Percent : 1.1902
+F1_Gap : 0.0502
+
+---------------------------------------------------------------------------
+Suitability | [3/3] Optimized Decision Tree
+Best parameters:
+{'model__min_samples_split': 2, 'model__min_samples_leaf': 1, 'model__max_depth': 30, 'model__criterion': 'entropy', 'model__class_weight': None, 'model__ccp_alpha': 0.0001}
+
+Validation results:
+Seconds : 1.8244
+CV_Accuracy : 0.9505
+CV_Macro_F1 : 0.9399
+CV_F1_Std : 0.0128
+Train_F1 : 0.9995
+Severe_Error_Percent : 2.1575
+False_High_Percent : 3.4022
+F1_Gap : 0.0596
+
+===========================================================================
+ORDINARY CROP REGRESSION OPTIMIZATION
+===========================================================================
+
+---------------------------------------------------------------------------
+Ordinary Crops | [1/3] Optimized Random Forest
+Best parameters:
+{'model__n_estimators': 200, 'model__min_samples_split': 2, 'model__min_samples_leaf': 4, 'model__max_features': 1.0, 'model__max_depth': 12}
+
+Validation results:
+Seconds : 104.5737
+CV_MAE : 2.1381
+CV_MAE_Std : 0.045
+CV_R2 : 0.7558
+Train_R2 : 0.8019
+R2_Gap : 0.0461
+
+---------------------------------------------------------------------------
+Ordinary Crops | [2/3] Optimized Gradient Boosting
+Best parameters:
+{'model__subsample': 0.85, 'model__n_estimators': 300, 'model__min_samples_leaf': 5, 'model__max_depth': 3, 'model__loss': 'huber', 'model__learning_rate': 0.05}
+
+Validation results:
+Seconds : 92.4587
+CV_MAE : 2.182
+CV_MAE_Std : 0.0463
+CV_R2 : 0.7509
+Train_R2 : 0.7691
+R2_Gap : 0.0182
+
+---------------------------------------------------------------------------
+Ordinary Crops | [3/3] Optimized Histogram GB
+Best parameters:
+{'model__min_samples_leaf': 10, 'model__max_leaf_nodes': 63, 'model__max_iter': 300, 'model__max_depth': 8, 'model__loss': 'absolute_error', 'model__learning_rate': 0.03, 'model__l2_regularization': 1}
+
+Validation results:
+Seconds : 46.1473
+CV_MAE : 2.0793
+CV_MAE_Std : 0.0486
+CV_R2 : 0.7444
+Train_R2 : 0.7799
+R2_Gap : 0.0356
+
+===========================================================================
+SAFFRON REGRESSION OPTIMIZATION
+===========================================================================
+
+---------------------------------------------------------------------------
+Saffron | [1/3] Regularized Random Forest
+Best parameters:
+{'model__n_estimators': 200, 'model__min_samples_split': 5, 'model__min_samples_leaf': 3, 'model__max_features': 1.0, 'model__max_depth': 2}
+
+Validation results:
+Seconds : 11.7102
+CV_MAE : 1.4226
+CV_MAE_Std : 0.2089
+CV_R2 : 0.23
+Train_R2 : 0.4261
+R2_Gap : 0.1961
+
+---------------------------------------------------------------------------
+Saffron | [2/3] Regularized Histogram GB
+Best parameters:
+{'model__min_samples_leaf': 10, 'model__max_leaf_nodes': 3, 'model__max_iter': 100, 'model__max_depth': 3, 'model__learning_rate': 0.02, 'model__l2_regularization': 5}
+
+Validation results:
+Seconds : 4.0402
+CV_MAE : 1.5294
+CV_MAE_Std : 0.2077
+CV_R2 : 0.1637
+Train_R2 : 0.4017
+R2_Gap : 0.238
+
+---------------------------------------------------------------------------
+Saffron | [3/3] Regularized SVR
+Best parameters:
+{'model__gamma': 0.05, 'model__epsilon': 0.8, 'model__C': 10}
+
+Validation results:
+Seconds : 0.6853
+CV_MAE : 1.6384
+CV_MAE_Std : 0.2269
+CV_R2 : 0.0176
+Train_R2 : 0.7753
+R2_Gap : 0.7576
+
+===========================================================================
+ENSEMBLE MODEL EVALUATION
+===========================================================================
+
+ Soft Voting Classifier
+Model                   Soft Voting Classifier
+Seconds                              23.021213
+CV_Accuracy                           0.972277
+CV_Macro_F1                            0.96419
+CV_F1_Std                             0.011881
+Train_F1                                   1.0
+Severe_Error_Percent                  1.000558
+False_High_Percent                    1.947294
+F1_Gap                                 0.03581
+
+ Voting Regressor
+Model         Voting Regressor
+Seconds               39.30343
+CV_MAE                2.095588
+CV_MAE_Std            0.046008
+CV_R2                 0.757239
+Train_R2              0.790324
+R2_Gap                0.033085
+
+ Saffron Voting Regressor
+Model         Saffron Voting Regressor
+Seconds                       1.573488
+CV_MAE                        1.513937
+CV_MAE_Std                    0.209714
+CV_R2                          0.18502
+Train_R2                      0.581084
+R2_Gap                        0.396064
+
+--- CLASSIFICATION OPTIMIZATION RESULTS ---
+                  Model  Seconds  CV_Accuracy  CV_Macro_F1  CV_F1_Std  Train_F1  Severe_Error_Percent  False_High_Percent  F1_Gap
+ Optimized Histogram GB 132.4479       0.9739       0.9674     0.0120    1.0000                1.0678              2.0406  0.0326
+ Soft Voting Classifier  23.0212       0.9723       0.9642     0.0119    1.0000                1.0006              1.9473  0.0358
+      Optimized RBF SVM 191.3291       0.9643       0.9479     0.0142    0.9981                0.6599              1.1902  0.0502
+Optimized Decision Tree   1.8244       0.9505       0.9399     0.0128    0.9995                2.1575              3.4022  0.0596
+
+--- ORDINARY REGRESSION OPTIMIZATION RESULTS ---
+                      Model  Seconds  CV_MAE  CV_MAE_Std  CV_R2  Train_R2  R2_Gap
+     Optimized Histogram GB  46.1473  2.0793      0.0486 0.7444    0.7799  0.0356
+           Voting Regressor  39.3034  2.0956      0.0460 0.7572    0.7903  0.0331
+    Optimized Random Forest 104.5737  2.1381      0.0450 0.7558    0.8019  0.0461
+Optimized Gradient Boosting  92.4587  2.1820      0.0463 0.7509    0.7691  0.0182
+
+--- SAFFRON OPTIMIZATION RESULTS ---
+                    Model  Seconds  CV_MAE  CV_MAE_Std  CV_R2  Train_R2  R2_Gap
+Regularized Random Forest  11.7102  1.4226      0.2089 0.2300    0.4261  0.1961
+ Saffron Voting Regressor   1.5735  1.5139      0.2097 0.1850    0.5811  0.3961
+ Regularized Histogram GB   4.0402  1.5294      0.2077 0.1637    0.4017  0.2380
+          Regularized SVR   0.6853  1.6384      0.2269 0.0176    0.7753  0.7576
+
+--- SELECTED MODEL CANDIDATES ---
+Classification: Soft Voting Classifier
+Ordinary regression: Optimized Histogram GB
+Saffron regression: Regularized Random Forest
+
+===========================================================================
+SELECTED CLASSIFIER: 2025-2026 EVALUATION
+===========================================================================
+Selected model: Soft Voting Classifier
+Accuracy: 98.4501 %
+Macro F1: 0.9786
+Balanced accuracy: 0.9837
+Severe errors: 5
+Low incorrectly predicted High: 5
+Severe error percentage: 0.287
+
+--- CLASSIFICATION REPORT ---
+              precision    recall  f1-score   support
+
+         Low       1.00      0.98      0.99       849
+      Medium       0.94      0.98      0.96       247
+        High       0.99      1.00      0.99       646
+
+    accuracy                           0.98      1742
+   macro avg       0.97      0.98      0.98      1742
+weighted avg       0.98      0.98      0.98      1742
+
+
+--- CONFUSION MATRIX ---
+               Predicted Low  Predicted Medium  Predicted High
+Actual Low               828                16               5
+Actual Medium              2               241               4
+Actual High                0                 0             646
+
+--- Optimized Histogram GB ---
+MAE: 2.15 t/ha
+RMSE: 3.2742 t/ha
+R2: 0.742
+Negative predictions clipped: 3
+
+--- Regularized Random Forest ---
+MAE: 1.3193 kg/ha
+RMSE: 1.7263 kg/ha
+R2: 0.3546
+Negative predictions clipped: 0
+
+===========================================================================
+CROP-SPECIFIC REGRESSION ANALYSIS
+===========================================================================
+        Crop  Train_Records  Test_Records  Actual_Mean_Yield  Pooled_MAE  Individual_MAE  Median_Baseline_MAE  Pooled_Normalized_MAE_Percent Lower_Error_Model
+     Almonds           1279           318             1.2367      0.6238          0.6476               0.8381                        50.4432            Pooled
+      Apples            930           240             6.1778      3.0449          3.1663               4.0550                        49.2871            Pooled
+    Apricots            767           180             3.7567      1.8842          1.9631               2.7278                        50.1556            Pooled
+        Figs            209            56             4.7567      1.9732          2.2372               2.9773                        41.4822            Pooled
+      Grapes           1401           357             7.0167      3.6420          3.7954               4.7199                        51.9044            Pooled
+      Melons            648           174            15.6243      1.9751          1.9109               5.6954                        12.6411        Individual
+     Oranges            310            67             6.0760      2.6065          2.9572               3.7563                        42.8978            Pooled
+   Pine Nuts            450           124             0.4646      0.2505          0.2696               0.3479                        53.9170            Pooled
+  Pistachios            339            62             0.6847      0.4311          0.4084               0.5183                        62.9601        Individual
+Pomegranates            920           227             4.8062      2.5592          2.6771               3.1854                        53.2470            Pooled
+ Watermelons            242            61            19.7678      2.8827          2.7368               7.6445                        14.5825        Individual
+
+===========================================================================
+PERMUTATION FEATURE IMPORTANCE
+===========================================================================
+
+--- Suitability Classification Feature Importance ---
+  Feature  Importance     Std
+Month_cos     0.39943 0.01564
+     Crop     0.39183 0.00695
+   Temp_C     0.30012 0.00500
+ Province     0.22075 0.00579
+Month_sin     0.14537 0.00738
+
+--- Ordinary Crop Yield Feature Importance ---
+         Feature  Importance     Std
+            Crop     3.18789 0.07271
+          Temp_C     1.43699 0.05437
+ Irrigation_Type     0.18457 0.02341
+         Rain_mm     0.01016 0.00715
+        Province     0.00640 0.00379
+       Month_sin     0.00476 0.00239
+Fertilizer_kg_ha     0.00318 0.00414
+       Month_cos     0.00295 0.00247
+   Land_Hectares     0.00127 0.00488
+            Year     0.00000 0.00000
+
+--- Saffron Yield Feature Importance ---
+         Feature  Importance     Std
+          Temp_C     0.55795 0.15389
+   Land_Hectares     0.00075 0.00119
+ Irrigation_Type     0.00034 0.00023
+Fertilizer_kg_ha     0.00008 0.00096
+            Year     0.00000 0.00000
+        Province    -0.00000 0.00064
+       Month_cos    -0.00048 0.01344
+         Rain_mm    -0.00118 0.00100
+       Month_sin    -0.00121 0.00166
+
+===========================================================================
+FINAL STEP 11 SUMMARY
+===========================================================================
+                      Task            Selected_Model      Metric  Chronological_Score  Test_Records
+Suitability Classification    Soft Voting Classifier    Macro F1               0.9786          1742
+  Ordinary Crop Regression    Optimized Histogram GB  MAE (t/ha)               2.1500          1866
+        Saffron Regression Regularized Random Forest MAE (kg/ha)               1.3193            42
+
+--- EXECUTION SUMMARY ---
+Hyperparameter search models: 9
+Maximum parameter configurations: 135
+Temporal validation folds: 5
+Ensemble models evaluated: 3
+Individual crop models: 11
+Total execution minutes: 11.49
+
+--- VALIDATION STATUS ---
+Hyperparameter optimization: Completed
+Temporal cross-validation: Completed
+Ensemble evaluation: Completed
+Crop-specific error analysis: Completed
+Feature importance: Completed
+Candidate model selection: Completed
+Original cleaned dataset: Unchanged
+Model files exported: No
+Independent real-world validation: Pending
+
+===========================================================================
+STEP 11 COMPLETED SUCCESSFULLY
+===========================================================================

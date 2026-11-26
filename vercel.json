@@ -1,0 +1,1 @@
+{"buildCommand":"cd frontend && npm install && npm run build","outputDirectory":"frontend/dist","functions":{"api/index.py":{"includeFiles":"backend/{models/**,rules.json,metrics.json}"}},"rewrites":[{"source":"/api/:path*","destination":"/api/index"}]}

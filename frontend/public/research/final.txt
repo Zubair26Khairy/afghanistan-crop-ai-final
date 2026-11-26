@@ -1,0 +1,345 @@
+
+===========================================================================
+STEP 12: FINAL TESTING AND MODEL EXPORT
+===========================================================================
+
+Output folder: Afghanistan_Crop_AI_Models
+Supported yield crops: 12
+Supported recommendation crops: 10
+Supported provinces: 34
+
+Retraining selected deployment models...
+Classification model fitted: 8787
+Ordinary regression model fitted: 9361
+Saffron regression model fitted: 189
+
+===========================================================================
+PRACTICAL AGRICULTURAL TESTING
+===========================================================================
+
+-----------------------------------------------------------------
+SCENARIO 1: Pomegranates - Kandahar
+Year: 2027
+Month: 3
+Predicted yield: 8.0495 t/ha
+Total production: 40.2476 tonnes
+ML suitability: High
+Rule suitability: High
+Final suitability: High
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+
+-----------------------------------------------------------------
+SCENARIO 2: Grapes - Herat
+Year: 2027
+Month: 3
+Predicted yield: 11.0973 t/ha
+Total production: 44.3894 tonnes
+ML suitability: High
+Rule suitability: High
+Final suitability: High
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+
+-----------------------------------------------------------------
+SCENARIO 3: Oranges - Nangarhar
+Year: 2027
+Month: 4
+Predicted yield: 9.1014 t/ha
+Total production: 27.3042 tonnes
+ML suitability: High
+Rule suitability: High
+Final suitability: High
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+
+-----------------------------------------------------------------
+SCENARIO 4: Apples - Wardak
+Year: 2027
+Month: 2
+Predicted yield: 8.3613 t/ha
+Total production: 41.8063 tonnes
+ML suitability: High
+Rule suitability: High
+Final suitability: High
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+
+-----------------------------------------------------------------
+SCENARIO 5: Watermelons - Helmand
+Year: 2027
+Month: 5
+Predicted yield: 26.6813 t/ha
+Total production: 266.8131 tonnes
+ML suitability: High
+Rule suitability: High
+Final suitability: High
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+
+-----------------------------------------------------------------
+SCENARIO 6: Saffron - Herat
+Year: 2027
+Month: 8
+Predicted yield: 3.7192 kg/ha
+Total production: 7.4384 kg
+ML suitability: Not Evaluated
+Rule suitability: Not Evaluated
+Final suitability: Not Evaluated
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+WARNING: Experimental saffron estimate: limited training data.
+
+-----------------------------------------------------------------
+SCENARIO 7: Pine Nuts - Paktia
+Year: 2027
+Month: 3
+Predicted yield: 0.5439 t/ha
+Total production: 2.1756 tonnes
+ML suitability: Not Evaluated
+Rule suitability: Not Evaluated
+Final suitability: Not Evaluated
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+
+-----------------------------------------------------------------
+SCENARIO 8: Oranges - Bamyan
+Year: 2027
+Month: 12
+Predicted yield: 2.101 t/ha
+Total production: 6.3031 tonnes
+ML suitability: Low
+Rule suitability: Low
+Final suitability: Low
+Rule adjustment: False
+WARNING: Year is outside the crop's training range (2017.00 to 2026.00).
+WARNING: Temp_C is outside the crop's training range (1.03 to 49.69).
+
+===========================================================================
+FINAL CROP RECOMMENDATIONS
+===========================================================================
+
+--- Kandahar ---
+        Crop ML_Suitability Rule_Suitability Final_Suitability  Predicted_Yield Yield_Unit  Rule_Adjusted
+     Almonds           High             High              High           2.5113       t/ha          False
+      Grapes           High             High              High          11.9012       t/ha          False
+Pomegranates           High             High              High           8.0495       t/ha          False
+        Figs           High           Medium            Medium           6.5264       t/ha           True
+      Melons         Medium           Medium            Medium          20.8891       t/ha          False
+      Apples            Low              Low               Low           7.1733       t/ha          False
+    Apricots            Low              Low               Low           6.9734       t/ha          False
+     Oranges            Low              Low               Low           9.2254       t/ha          False
+  Pistachios            Low              Low               Low           1.2722       t/ha          False
+ Watermelons            Low              Low               Low          26.6452       t/ha          False
+Saffron and Pine Nuts: suitability evaluation unavailable.
+
+--- Herat ---
+        Crop ML_Suitability Rule_Suitability Final_Suitability  Predicted_Yield Yield_Unit  Rule_Adjusted
+     Almonds           High             High              High           2.0956       t/ha          False
+        Figs           High             High              High           7.1651       t/ha          False
+      Grapes           High             High              High          11.0973       t/ha          False
+Pomegranates           High           Medium            Medium           6.8187       t/ha           True
+      Apples            Low              Low               Low           9.1652       t/ha          False
+    Apricots            Low              Low               Low           6.4128       t/ha          False
+      Melons            Low              Low               Low          19.1556       t/ha          False
+     Oranges            Low              Low               Low           9.2333       t/ha          False
+  Pistachios            Low              Low               Low           0.9351       t/ha          False
+ Watermelons            Low              Low               Low          23.3634       t/ha          False
+Saffron and Pine Nuts: suitability evaluation unavailable.
+
+--- Nangarhar ---
+        Crop ML_Suitability Rule_Suitability Final_Suitability  Predicted_Yield Yield_Unit  Rule_Adjusted
+      Melons           High             High              High          15.9603       t/ha          False
+     Oranges           High             High              High           9.1014       t/ha          False
+Pomegranates         Medium           Medium            Medium           8.2347       t/ha          False
+     Almonds            Low              Low               Low           2.7503       t/ha          False
+      Apples         Medium              Low               Low           7.6505       t/ha           True
+    Apricots         Medium              Low               Low           7.2661       t/ha           True
+        Figs            Low              Low               Low           6.5211       t/ha          False
+      Grapes         Medium              Low               Low           9.0244       t/ha           True
+  Pistachios            Low              Low               Low           1.5126       t/ha          False
+ Watermelons            Low              Low               Low          27.5759       t/ha          False
+Saffron and Pine Nuts: suitability evaluation unavailable.
+
+===========================================================================
+IRRIGATION SCENARIO COMPARISON
+===========================================================================
+
+--- Pomegranates ---
+        Crop Province Irrigation_Type  Predicted_Yield Yield_Unit  Total_Production Production_Unit  Difference_vs_Rainfed_Percent
+Pomegranates Kandahar            Drip           8.0495       t/ha           40.2476          tonnes                        20.5177
+Pomegranates Kandahar           Canal           7.5124       t/ha           37.5620          tonnes                        12.4762
+Pomegranates Kandahar         Rainfed           6.6791       t/ha           33.3956          tonnes                         0.0000
+
+--- Grapes ---
+  Crop Province Irrigation_Type  Predicted_Yield Yield_Unit  Total_Production Production_Unit  Difference_vs_Rainfed_Percent
+Grapes    Herat            Drip          12.1896       t/ha           48.7585          tonnes                        27.3517
+Grapes    Herat           Canal          11.0973       t/ha           44.3894          tonnes                        15.9399
+Grapes    Herat         Rainfed           9.5716       t/ha           38.2865          tonnes                         0.0000
+
+--- Oranges ---
+   Crop  Province Irrigation_Type  Predicted_Yield Yield_Unit  Total_Production Production_Unit  Difference_vs_Rainfed_Percent
+Oranges Nangarhar            Drip           9.1014       t/ha           27.3042          tonnes                        16.9094
+Oranges Nangarhar           Canal           8.7717       t/ha           26.3150          tonnes                        12.6744
+Oranges Nangarhar         Rainfed           7.7850       t/ha           23.3549          tonnes                         0.0000
+
+--- Apples ---
+  Crop Province Irrigation_Type  Predicted_Yield Yield_Unit  Total_Production Production_Unit  Difference_vs_Rainfed_Percent
+Apples   Wardak            Drip           8.7316       t/ha           43.6579          tonnes                        12.2718
+Apples   Wardak           Canal           8.3613       t/ha           41.8063          tonnes                         7.5104
+Apples   Wardak         Rainfed           7.7772       t/ha           38.8862          tonnes                         0.0000
+
+--- Watermelons ---
+       Crop Province Irrigation_Type  Predicted_Yield Yield_Unit  Total_Production Production_Unit  Difference_vs_Rainfed_Percent
+Watermelons  Helmand            Drip          26.6813       t/ha          266.8131          tonnes                        29.0554
+Watermelons  Helmand           Canal          23.5165       t/ha          235.1650          tonnes                        13.7475
+Watermelons  Helmand         Rainfed          20.6743       t/ha          206.7432          tonnes                         0.0000
+
+--- Saffron ---
+   Crop Province Irrigation_Type  Predicted_Yield Yield_Unit  Total_Production Production_Unit  Difference_vs_Rainfed_Percent
+Saffron    Herat            Drip           3.7192      kg/ha            7.4384              kg                            0.0
+Saffron    Herat           Canal           3.7192      kg/ha            7.4384              kg                            0.0
+Saffron    Herat         Rainfed           3.7192      kg/ha            7.4384              kg                            0.0
+
+===========================================================================
+INPUT SENSITIVITY ANALYSIS
+===========================================================================
+
+--- TEMPERATURE ---
+Changed_Feature  Input_Value  Predicted_Yield  Total_Production Final_Suitability
+    temperature           10           4.7101           23.5506            Medium
+    temperature           15           6.5492           32.7460            Medium
+    temperature           20           7.1028           35.5141            Medium
+    temperature           25           8.0516           40.2582              High
+    temperature           30           7.9391           39.6957              High
+    temperature           35           4.7175           23.5873            Medium
+    temperature           40           2.3571           11.7857               Low
+
+--- RAINFALL ---
+Changed_Feature  Input_Value  Predicted_Yield  Total_Production Final_Suitability
+       rainfall          100           8.1046           40.5229              High
+       rainfall          200           8.0250           40.1249              High
+       rainfall          300           8.0495           40.2476              High
+       rainfall          400           8.0295           40.1477              High
+       rainfall          500           8.0305           40.1525              High
+       rainfall          600           8.0534           40.2668              High
+       rainfall          800           8.0323           40.1616              High
+
+--- FERTILIZER ---
+Changed_Feature  Input_Value  Predicted_Yield  Total_Production Final_Suitability
+     fertilizer            0           7.1232           35.6162              High
+     fertilizer           40           7.7144           38.5719              High
+     fertilizer           80           8.0409           40.2043              High
+     fertilizer          120           8.0495           40.2476              High
+     fertilizer          160           8.0046           40.0229              High
+     fertilizer          200           7.9824           39.9121              High
+
+--- LAND ---
+Changed_Feature  Input_Value  Predicted_Yield  Total_Production Final_Suitability
+           land            1           8.1012            8.1012              High
+           land            2           8.0473           16.0947              High
+           land            5           8.0495           40.2476              High
+           land           10           8.0718           80.7177              High
+           land           15           8.1052          121.5785              High
+           land           20           8.1145          162.2902              High
+
+--- YEAR ---
+Changed_Feature  Input_Value  Predicted_Yield  Total_Production Final_Suitability
+           year         2026           8.0495           40.2476              High
+           year         2027           8.0495           40.2476              High
+           year         2028           8.0495           40.2476              High
+           year         2029           8.0495           40.2476              High
+           year         2030           8.0495           40.2476              High
+           year         2031           8.0495           40.2476              High
+
+===========================================================================
+HYBRID RECOMMENDATION VALIDATION
+===========================================================================
+Rule consistency records: 8787
+Raw ML rule violations: 0
+Hybrid rule violations: 0
+
+--- INVALID INPUT TESTS ---
+PASS: month = 15 rejected.
+PASS: temperature = 99 rejected.
+PASS: rainfall = -100 rejected.
+PASS: fertilizer = -50 rejected.
+PASS: land = 0 rejected.
+PASS: province = Unknown rejected.
+PASS: crop = Unknown rejected.
+PASS: irrigation = Unknown rejected.
+PASS: temperature = nan rejected.
+
+===========================================================================
+EXPORTING FINAL MODELS
+===========================================================================
+classification : crop_suitability_model.joblib | 1.894 MB
+ordinary_regression : crop_yield_model.joblib | 0.692 MB
+saffron_regression : saffron_yield_model.joblib | 0.034 MB
+Metadata saved: model_metadata.json
+Saved: classification_optimization.csv
+Saved: regression_optimization.csv
+Saved: saffron_optimization.csv
+Saved: crop_error_analysis.csv
+Saved: final_model_benchmark.csv
+Saved: classification_cross_validation.csv
+Saved: regression_cross_validation.csv
+Saved: saffron_cross_validation.csv
+Saved: practical_test_results.csv
+Saved: crop_recommendation_results.csv
+Saved: irrigation_comparison_results.csv
+Saved: sensitivity_analysis.csv
+Saved: classification_feature_importance.csv
+Saved: regression_feature_importance.csv
+Saved: saffron_feature_importance.csv
+
+===========================================================================
+VERIFYING SAVED MODEL FILES
+===========================================================================
+Classification model reload: PASS
+Ordinary regression model reload: PASS
+Saffron regression model reload: PASS
+Metadata verification: PASS
+
+===========================================================================
+AFGHANISTAN CROP AI - FINAL PROJECT SUMMARY
+===========================================================================
+
+--- DATASET ---
+Cleaned records: 9550
+Provinces: 34
+Yield prediction crops: 12
+Suitability prediction crops: 10
+
+--- SELECTED MODELS ---
+Classification: Soft Voting Classifier
+Ordinary regression: Optimized Histogram GB
+Saffron regression: Regularized Random Forest
+
+--- PRE-REFIT BENCHMARK RESULTS ---
+Classification accuracy: 98.4501 %
+Classification Macro F1: 0.9786
+Ordinary regression MAE: 2.15 t/ha
+Ordinary regression R2: 0.742
+Saffron regression MAE: 1.3193 kg/ha
+Saffron regression R2: 0.3546
+
+--- DEPLOYMENT VALIDATION ---
+Practical scenarios: 8
+Invalid input tests passed: 9
+Hybrid rule violations: 0
+Saved models: 3
+Model reload tests: PASSED
+Metadata verification: PASSED
+Original dataset: UNCHANGED
+Independent real-world validation: PENDING
+
+--- OUTPUT LOCATION ---
+Afghanistan_Crop_AI_Models
+
+Execution minutes: 0.39
+
+===========================================================================
+STEP 12 COMPLETED SUCCESSFULLY
+MODEL DEVELOPMENT AND EXPORT COMPLETED
+===========================================================================
